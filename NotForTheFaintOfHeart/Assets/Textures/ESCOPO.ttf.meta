@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 086b16a4ac680e04c95a1b2a572808e7
+timeCreated: 1497246857
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ESCOPO
+  fontNames:
+  - ESCOPO
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
