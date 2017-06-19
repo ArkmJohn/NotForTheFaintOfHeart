@@ -170,6 +170,7 @@
     <Compile Include="Assets\Scripts\HidingSpot.cs" />
     <Compile Include="Assets\Scripts\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\LightController.cs" />
+    <Compile Include="Assets\Scripts\LightSwitchControl.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\CustomEvents\ChangeColorLight.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\CustomEvents\CustomEvent.cs" />
@@ -179,6 +180,7 @@
     <Compile Include="Assets\Scripts\ScriptableObject\CustomEvents\PlaySound.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\CustomEvents\SetCameraEffect.cs" />
     <Compile Include="Assets\Scripts\SpecialEvent1.cs" />
+    <Compile Include="Assets\Scripts\Test\CustomColorSat.cs" />
     <Compile Include="Assets\Shaders\GlitchEffect.cs" />
     <Compile Include="Assets\Shaders\TestSetDistort.cs" />
     <Compile Include="Assets\ShadowDetect\Scripts\Cameras\DragMouseOrbit.cs" />
@@ -231,6 +233,7 @@
     <None Include="Assets\ProCore\ProBuilder\readme.txt" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+    <None Include="Assets\Scripts\Test\CustomColorSat.shader" />
     <None Include="Assets\Shaders\Burn.shader" />
     <None Include="Assets\Shaders\Distort.shader" />
     <None Include="Assets\Shaders\Glitch.shader" />

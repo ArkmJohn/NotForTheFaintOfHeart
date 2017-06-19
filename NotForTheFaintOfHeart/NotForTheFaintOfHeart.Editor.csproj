@@ -276,6 +276,7 @@
     <None Include="Assets\ProCore\ProBuilder\readme.txt" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+    <None Include="Assets\Scripts\Test\CustomColorSat.shader" />
     <None Include="Assets\Shaders\Burn.shader" />
     <None Include="Assets\Shaders\Distort.shader" />
     <None Include="Assets\Shaders\Glitch.shader" />

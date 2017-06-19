@@ -20,15 +20,6 @@ public class FlashlightControl : MonoBehaviour {
         {
             FlashLight();
         }
-        //if (Input.GetButtonDown("Fire2"))
-        //{
-        //    if (Cursor.visible == false)
-        //    {
-        //        Cursor.visible = true;
-        //    }
-        //    else
-        //        Cursor.visible = false;
-        //}
 	}
 
     void FlashLight()
@@ -37,14 +28,11 @@ public class FlashlightControl : MonoBehaviour {
         {
             flashlight.GetComponent<Light>().enabled = false;
             flashOff.PlayEvent(this.gameObject);
-            //grayScale.enabled = true;
         }
         else
         {
             flashlight.GetComponent<Light>().enabled = true;
             flashOn.PlayEvent(this.gameObject);
-
-            //grayScale.enabled = false;
         }
     }
 }
