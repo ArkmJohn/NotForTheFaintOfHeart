@@ -7,7 +7,6 @@ public class FlashlightControl : MonoBehaviour {
 
     public GameObject flashlight;
     public CustomEvent flashOn, flashOff;
-    public Grayscale grayScale;
 
 	// Use this for initialization
 	void Start () {
