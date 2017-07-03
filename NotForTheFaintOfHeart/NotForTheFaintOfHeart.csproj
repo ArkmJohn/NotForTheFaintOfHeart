@@ -166,6 +166,7 @@
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\FadeText.cs" />
     <Compile Include="Assets\Scripts\FlashlightControl.cs" />
+    <Compile Include="Assets\Scripts\FlashlightInteractable.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HidingSpot.cs" />
     <Compile Include="Assets\Scripts\InteractableObject.cs" />
@@ -181,6 +182,9 @@
     <Compile Include="Assets\Scripts\ScriptableObject\CustomEvents\SetCameraEffect.cs" />
     <Compile Include="Assets\Scripts\SpecialEvent1.cs" />
     <Compile Include="Assets\Scripts\Test\CustomColorSat.cs" />
+    <Compile Include="Assets\Shaders\BandWApply.cs" />
+    <Compile Include="Assets\Shaders\ColorCorrectCurve.cs" />
+    <Compile Include="Assets\Shaders\ColorGradeApply.cs" />
     <Compile Include="Assets\Shaders\GlitchEffect.cs" />
     <Compile Include="Assets\Shaders\TestSetDistort.cs" />
     <Compile Include="Assets\ShadowDetect\Scripts\Cameras\DragMouseOrbit.cs" />
@@ -234,7 +238,10 @@
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
     <None Include="Assets\Scripts\Test\CustomColorSat.shader" />
+    <None Include="Assets\Shaders\BandW.shader" />
     <None Include="Assets\Shaders\Burn.shader" />
+    <None Include="Assets\Shaders\ColorCorrectCurve.shader" />
+    <None Include="Assets\Shaders\ColorGrade.shader" />
     <None Include="Assets\Shaders\Distort.shader" />
     <None Include="Assets\Shaders\Glitch.shader" />
     <None Include="Assets\ShadowDetect\Documentation\README.txt" />

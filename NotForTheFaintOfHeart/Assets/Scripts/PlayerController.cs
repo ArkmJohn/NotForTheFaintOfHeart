@@ -5,7 +5,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour {
 
-    public bool isHidden = false;
+    public bool isHidden = false, hasFlashlight = false;
     public AudioSource heartBeat, heartBeatFast;
     public GameObject interactable;
 
@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if (FindDistNearestEnemy() > 10)
+        if (FindDistNearestEnemy() > 10) // Heartbeat Effect
         {
             heartBeat.enabled = true;
             heartBeatFast.enabled = false;
@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour {
             heartBeat.enabled = false;
             heartBeatFast.enabled = true;
         }
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2")) // Interactable Fuction
         {
             if (interactable != null)
             {
@@ -59,9 +59,14 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+
+        if (hasFlashlight)
+        {
+            GetComponent<FlashlightControl>().enabled = true;
+        }
 	}
 
-    float FindDistNearestEnemy()
+    float FindDistNearestEnemy() // Detects the nearest enemy to be used for indicators
     {
         EnemyController[] allEnemies = FindObjectsOfType<EnemyController>();
         float dist = 9999;

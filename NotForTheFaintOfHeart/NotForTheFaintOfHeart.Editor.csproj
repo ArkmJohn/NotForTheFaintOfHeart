@@ -277,7 +277,10 @@
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
     <None Include="Assets\Scripts\Test\CustomColorSat.shader" />
+    <None Include="Assets\Shaders\BandW.shader" />
     <None Include="Assets\Shaders\Burn.shader" />
+    <None Include="Assets\Shaders\ColorCorrectCurve.shader" />
+    <None Include="Assets\Shaders\ColorGrade.shader" />
     <None Include="Assets\Shaders\Distort.shader" />
     <None Include="Assets\Shaders\Glitch.shader" />
     <None Include="Assets\ShadowDetect\Documentation\README.txt" />
