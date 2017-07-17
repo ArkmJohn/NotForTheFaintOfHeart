@@ -136,6 +136,9 @@
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
     </Reference>
+    <Reference Include="Parse.Unity">
+      <HintPath>Assets\Parse\Parse.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="ProBuilderCore-Unity5">
       <HintPath>Assets\ProCore\ProBuilder\Classes\ProBuilderCore-Unity5.dll</HintPath>
     </Reference>
@@ -199,13 +202,35 @@
     <None Include="Assets\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\Histogram.compute" />
     <None Include="Assets\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGrading.shader" />
     <None Include="Assets\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGradingHistogram.shader" />
+    <None Include="Assets\LICENSE.txt" />
     <None Include="Assets\OVR\Editor\AndroidManifest.OVRSubmission.xml" />
     <None Include="Assets\OVR\Plugins\placeholder.txt" />
+    <None Include="Assets\OVR\Resources\Alpha Premultiply.shader" />
+    <None Include="Assets\OVR\Resources\OVRMRCameraFrame.shader" />
+    <None Include="Assets\OVR\Resources\OVRMRClipPlane.shader" />
     <None Include="Assets\OVR\Resources\Underlay Impostor.shader" />
     <None Include="Assets\OVR\Resources\Underlay Transparent Occluder.shader" />
     <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
     <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
     <None Include="Assets\OVR\Shaders\Unlit Crosshair.shader" />
+    <None Include="Assets\OVRHarness\LICENSE.txt" />
+    <None Include="Assets\OVRHarness\Resources\help.txt" />
+    <None Include="Assets\OVRHarness\Resources\intro.txt" />
+    <None Include="Assets\OVRHarness\Resources\scenes.txt" />
+    <None Include="Assets\OVRInspector\LICENSE.txt" />
+    <None Include="Assets\OVRInspector\Resources\OVRSettings.txt" />
+    <None Include="Assets\OVRInspector\Resources\Quit.txt" />
+    <None Include="Assets\OVRInspector\Resources\UISettings.txt" />
+    <None Include="Assets\OVRInspector\Shaders\Particle Alpha Blend-AfterTrans-TransAlphaCutoff.shader" />
+    <None Include="Assets\OVRInspector\Shaders\Particle-Alpha-Premultiply-AfterTrans.shader" />
+    <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTest.shader" />
+    <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTestFont.shader" />
+    <None Include="Assets\OvrAvatar\Content\Materials\AvatarMaterialStateShader.cginc" />
+    <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShader.shader" />
+    <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderPBS.shader" />
+    <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
+    <None Include="Assets\Parse\Parse.Unity.xml" />
+    <None Include="Assets\Plugins\Android\assets\placeholder.txt" />
     <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
     <None Include="Assets\ProCore\ProBuilder\About\Credits.txt" />
     <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
@@ -315,6 +340,7 @@
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\third_party_notices.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

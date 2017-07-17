@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.ImageEffects;
+using UnityEngine.UI;
 
 public class FlashlightControl : MonoBehaviour {
 
     public GameObject flashlight;
+    public Image batteryChargeContent;
     public CustomEvent flashOn, flashOff;
 
     public bool isLightOn = false;
@@ -24,7 +25,7 @@ public class FlashlightControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && hasChargedBattery())
         {
             UseFlashLight();
         }
@@ -48,24 +49,24 @@ public class FlashlightControl : MonoBehaviour {
 
     void BatteryLogic()
     {
-
-        if (!hasChargedBattery() && isLightOn)
-        {
-            TurnOff();
-        }
-
+        HandleUI();
         // Check if the battery has charge
         if (!hasChargedBattery())
         {
-            // If there is no charge charge the battery up
-            if (batteryChargeCounter < batteryChargeTime)
-                batteryChargeCounter += Time.deltaTime;
+            if (isLightOn)
+                TurnOff();
             else
-                ChargeBattery();
+            {
+                // If there is no charge charge the battery up
+                if (batteryChargeCounter < batteryChargeTime)
+                    batteryChargeCounter += Time.deltaTime;
+                else
+                    FullChargeBattery();
+            }
         }
 
         
-        if (isLightOn)
+        if (hasChargedBattery() && isLightOn)
         {
             // Drain the battery
             BatteryDrain(Time.deltaTime);
@@ -73,25 +74,35 @@ public class FlashlightControl : MonoBehaviour {
         else
         {
             // Charge the battery
+            if(batteryUseCounter < batteryUseTime)
+                BatteryDrain(-Time.deltaTime / 4);
         }
 
     }
 
-    void ChargeBattery()
+    void FullChargeBattery()
     {
-        if (hasChargedBattery())
-        {
-            batteryUseCounter = batteryUseTime;
-
-        }
+        batteryUseCounter = batteryUseTime;
+        batteryChargeCounter = 0;
     }
 
     void BatteryDrain(float timeCount)
     {
         if (hasChargedBattery())
         {
-            batteryUseTime -= timeCount;
+            batteryUseCounter -= timeCount;
         }
+    }
+
+    void HandleUI()
+    {
+        float temp = FindValue(batteryUseCounter, 0, batteryUseTime, 0, 1);
+        batteryChargeContent.fillAmount = temp;
+    }
+
+    float FindValue(float val, float iMin, float iMax, float oMin, float oMax)
+    {
+        return (val - iMin) * (oMax - oMin) / (iMax - iMin) + oMin;
     }
 
     public void TurnOn()
@@ -112,10 +123,12 @@ public class FlashlightControl : MonoBehaviour {
     {
         if (batteryUseCounter < 0)
         {
+            Debug.Log("No Battery");
             return false;
         }
         else
             return true;
     }
+
 
 }

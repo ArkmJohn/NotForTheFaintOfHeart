@@ -1,0 +1,529 @@
+fileFormatVersion: 2
+guid: d8c24e3b52f8ae44899418e2ac343d98
+timeCreated: 1500211217
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: billy
+    100002: Body
+    100004: Bone005
+    100006: Bone005(mirrored)
+    100008: Bone006
+    100010: Bone006(mirrored)
+    100012: Bone007
+    100014: Bone007(mirrored)
+    100016: Bone009
+    100018: Bone009(mirrored)
+    100020: Bone010
+    100022: Bone010(mirrored)
+    100024: Bone011
+    100026: Bone011(mirrored)
+    100028: Bone013
+    100030: Bone013(mirrored)
+    100032: Bone014
+    100034: Bone014(mirrored)
+    100036: Bone015
+    100038: Bone015(mirrored)
+    100040: Bone017
+    100042: Bone017(mirrored)
+    100044: Bone018
+    100046: Bone018(mirrored)
+    100048: Bone019
+    100050: Bone019(mirrored)
+    100052: Bone021
+    100054: Bone021(mirrored)
+    100056: Bone022
+    100058: Bone022(mirrored)
+    100060: chest
+    100062: Circle001
+    100064: Circle002
+    100066: Circle003
+    100068: Circle004
+    100070: Circle005
+    100072: Circle006
+    100074: Circle007
+    100076: Circle008
+    100078: Circle009
+    100080: Circle010
+    100082: clavicle l
+    100084: clavicle r
+    100086: cog
+    100088: collar
+    100090: down arm l
+    100092: down arm r
+    100094: Ellipse001
+    100096: Ellipse002
+    100098: end
+    100100: end 1
+    100102: end 2
+    100104: end 3
+    100106: end 4
+    100108: end 5
+    100110: end 6
+    100112: end 7
+    100114: end 8
+    100116: end 9
+    100118: feet l
+    100120: feet r
+    100122: hair
+    100124: head
+    100126: head end
+    100128: IK Chain001
+    100130: IK Chain002
+    100132: IK Chain003
+    100134: IK Chain004
+    100136: IK Chain005
+    100138: IK Chain006
+    100140: IK Chain007
+    100142: IK Chain008
+    100144: //RootNode
+    100146: le
+    100148: ln
+    100150: neck
+    100152: Object001
+    100154: Object002
+    100156: palm l
+    100158: palm r
+    100160: re
+    100162: rm
+    100164: shank l
+    100166: shank r
+    100168: thigh l
+    100170: thigh r
+    100172: toe end
+    100174: toe end 1
+    100176: toe l
+    100178: toe r
+    100180: up arm l
+    100182: up arm r
+    400000: billy
+    400002: Body
+    400004: Bone005
+    400006: Bone005(mirrored)
+    400008: Bone006
+    400010: Bone006(mirrored)
+    400012: Bone007
+    400014: Bone007(mirrored)
+    400016: Bone009
+    400018: Bone009(mirrored)
+    400020: Bone010
+    400022: Bone010(mirrored)
+    400024: Bone011
+    400026: Bone011(mirrored)
+    400028: Bone013
+    400030: Bone013(mirrored)
+    400032: Bone014
+    400034: Bone014(mirrored)
+    400036: Bone015
+    400038: Bone015(mirrored)
+    400040: Bone017
+    400042: Bone017(mirrored)
+    400044: Bone018
+    400046: Bone018(mirrored)
+    400048: Bone019
+    400050: Bone019(mirrored)
+    400052: Bone021
+    400054: Bone021(mirrored)
+    400056: Bone022
+    400058: Bone022(mirrored)
+    400060: chest
+    400062: Circle001
+    400064: Circle002
+    400066: Circle003
+    400068: Circle004
+    400070: Circle005
+    400072: Circle006
+    400074: Circle007
+    400076: Circle008
+    400078: Circle009
+    400080: Circle010
+    400082: clavicle l
+    400084: clavicle r
+    400086: cog
+    400088: collar
+    400090: down arm l
+    400092: down arm r
+    400094: Ellipse001
+    400096: Ellipse002
+    400098: end
+    400100: end 1
+    400102: end 2
+    400104: end 3
+    400106: end 4
+    400108: end 5
+    400110: end 6
+    400112: end 7
+    400114: end 8
+    400116: end 9
+    400118: feet l
+    400120: feet r
+    400122: hair
+    400124: head
+    400126: head end
+    400128: IK Chain001
+    400130: IK Chain002
+    400132: IK Chain003
+    400134: IK Chain004
+    400136: IK Chain005
+    400138: IK Chain006
+    400140: IK Chain007
+    400142: IK Chain008
+    400144: //RootNode
+    400146: le
+    400148: ln
+    400150: neck
+    400152: Object001
+    400154: Object002
+    400156: palm l
+    400158: palm r
+    400160: re
+    400162: rm
+    400164: shank l
+    400166: shank r
+    400168: thigh l
+    400170: thigh r
+    400172: toe end
+    400174: toe end 1
+    400176: toe l
+    400178: toe r
+    400180: up arm l
+    400182: up arm r
+    2300000: collar
+    2300002: hair
+    2300004: Object001
+    2300006: Object002
+    3300000: collar
+    3300002: hair
+    3300004: Object001
+    3300006: Object002
+    4300000: Body
+    4300002: hair
+    4300004: collar
+    4300006: Object001
+    4300008: Object002
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Circle001
+        weight: 1
+      - path: Circle001/Circle002
+        weight: 1
+      - path: Circle001/Circle002/Circle003
+        weight: 1
+      - path: Circle001/Circle002/Circle003/Circle004
+        weight: 1
+      - path: Circle001/Circle002/Circle003/Circle004/Circle005
+        weight: 1
+      - path: Circle001/Circle002/Circle003/Circle004/Circle005/Circle006
+        weight: 1
+      - path: Circle001/Circle002/Circle003/Circle004/Circle007
+        weight: 1
+      - path: Circle001/Circle002/Circle003/Circle004/Circle008
+        weight: 1
+      - path: Circle001/Circle002/Circle009
+        weight: 1
+      - path: Circle001/Circle002/Circle010
+        weight: 1
+      - path: Circle001/Circle002/cog
+        weight: 1
+      - path: Circle001/Circle002/cog/billy
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/Object002
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone005(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone005(mirrored)/Bone006(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone005(mirrored)/Bone006(mirrored)/Bone007(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone005(mirrored)/Bone006(mirrored)/Bone007(mirrored)/end 2
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone009(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone009(mirrored)/Bone010(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone009(mirrored)/Bone010(mirrored)/Bone011(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone009(mirrored)/Bone010(mirrored)/Bone011(mirrored)/end 3
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone013(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone013(mirrored)/Bone014(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone013(mirrored)/Bone014(mirrored)/Bone015(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone013(mirrored)/Bone014(mirrored)/Bone015(mirrored)/end 4
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone017(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone017(mirrored)/Bone018(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone017(mirrored)/Bone018(mirrored)/Bone019(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone017(mirrored)/Bone018(mirrored)/Bone019(mirrored)/end 5
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone021(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone021(mirrored)/Bone022(mirrored)
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle l/up arm l/down arm l/palm
+          l/Bone021(mirrored)/Bone022(mirrored)/end
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/Object001
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone005
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone005/Bone006
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone005/Bone006/Bone007
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone005/Bone006/Bone007/end 6
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone009
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone009/Bone010
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone009/Bone010/Bone011
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone009/Bone010/Bone011/end 7
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone013
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone013/Bone014
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone013/Bone014/Bone015
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone013/Bone014/Bone015/end 8
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone017
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone017/Bone018
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone017/Bone018/Bone019
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone017/Bone018/Bone019/end 9
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone021
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone021/Bone022
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/clavicle r/up arm r/down arm r/palm
+          r/Bone021/Bone022/end 1
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/neck
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/neck/collar
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/neck/head
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/neck/head/hair
+        weight: 1
+      - path: Circle001/Circle002/cog/billy/chest/neck/head/head end
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh l
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh l/shank l
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh l/shank l/feet l
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh l/shank l/feet l/toe l
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh l/shank l/feet l/toe l/toe end
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh r
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh r/shank r
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh r/shank r/feet r
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh r/shank r/feet r/toe r
+        weight: 1
+      - path: Circle001/Circle002/cog/thigh r/shank r/feet r/toe r/toe end 1
+        weight: 1
+      - path: Circle001/Circle002/le
+        weight: 1
+      - path: Circle001/Circle002/re
+        weight: 1
+      - path: Circle001/Ellipse001
+        weight: 1
+      - path: Circle001/Ellipse001/IK Chain004
+        weight: 1
+      - path: Circle001/Ellipse001/IK Chain004/IK Chain003
+        weight: 1
+      - path: Circle001/Ellipse001/IK Chain004/IK Chain003/IK Chain001
+        weight: 1
+      - path: Circle001/Ellipse002
+        weight: 1
+      - path: Circle001/Ellipse002/IK Chain006
+        weight: 1
+      - path: Circle001/Ellipse002/IK Chain006/IK Chain005
+        weight: 1
+      - path: Circle001/Ellipse002/IK Chain006/IK Chain005/IK Chain002
+        weight: 1
+      - path: Circle001/ln
+        weight: 1
+      - path: Circle001/rm
+        weight: 1
+      - path: IK Chain007
+        weight: 1
+      - path: IK Chain008
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.002
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -85,6 +85,9 @@
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
     </Reference>
+    <Reference Include="Parse.Unity">
+      <HintPath>Assets\Parse\Parse.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="ProBuilderCore-Unity5">
       <HintPath>Assets\ProCore\ProBuilder\Classes\ProBuilderCore-Unity5.dll</HintPath>
     </Reference>
@@ -130,6 +133,7 @@
     <Compile Include="Assets\OVR\Scripts\OVRInput.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRLint.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRMixedReality.cs" />
     <Compile Include="Assets\OVR\Scripts\OVROnCompleteListener.cs" />
     <Compile Include="Assets\OVR\Scripts\OVROverlay.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRPlatformMenu.cs" />
@@ -153,6 +157,56 @@
     <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
     <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
     <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
+    <Compile Include="Assets\OVRHarness\Scripts\OVRHarness.cs" />
+    <Compile Include="Assets\OVRHarness\Scripts\OVRSceneLoader.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\IOVRInspectorContext.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRDiscomfortWarning.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRDiscomfortWarningSource.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRGazePointer.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRInputModule.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRInspector.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRInspectorContext.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRInspectorLoader.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRInspectorPanelBuilder.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRMousePointer.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRPhysicsRaycaster.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRPlatformMenu2.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRPointerEventData.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRRaycaster.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRRenderTrackerFrustum.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRScreenFade2.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRSettingsMenu.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRSliderLabelUpdater.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRUISettingsMenu.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRUserPanel.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\OVRWarningList.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\ParticleGazeCursor.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRGazeEventTrigger.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRGazeScroller.cs" />
+    <Compile Include="Assets\OVRInspector\Scripts\UIUtils\OVRProgressIndicator.cs" />
+    <Compile Include="Assets\OvrAvatar\Samples\GripPoses\Scripts\PoseEditHelper.cs" />
+    <Compile Include="Assets\OvrAvatar\Samples\RemoteLoopback\Scripts\RemoteLoopbackManager.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatar.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAsset.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAssetMesh.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarAssetTexture.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarBase.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarBody.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarComponent.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarDriver.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarHand.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarLocalDriver.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarPacket.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarProjectorRenderComponent.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarRemoteDriver.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarRenderComponent.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSDKCAPI.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSDKManager.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSettings.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSettingsEditor.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
+    <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarTouchController.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
@@ -182,6 +236,7 @@
     <Compile Include="Assets\Scripts\ScriptableObject\CustomEvents\SetCameraEffect.cs" />
     <Compile Include="Assets\Scripts\SpecialEvent1.cs" />
     <Compile Include="Assets\Scripts\Test\CustomColorSat.cs" />
+    <Compile Include="Assets\Scripts\VRButton.cs" />
     <Compile Include="Assets\Shaders\BandWApply.cs" />
     <Compile Include="Assets\Shaders\ColorCorrectCurve.cs" />
     <Compile Include="Assets\Shaders\ColorGradeApply.cs" />
@@ -213,13 +268,35 @@
     <None Include="Assets\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\Histogram.compute" />
     <None Include="Assets\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGrading.shader" />
     <None Include="Assets\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGradingHistogram.shader" />
+    <None Include="Assets\LICENSE.txt" />
     <None Include="Assets\OVR\Editor\AndroidManifest.OVRSubmission.xml" />
     <None Include="Assets\OVR\Plugins\placeholder.txt" />
+    <None Include="Assets\OVR\Resources\Alpha Premultiply.shader" />
+    <None Include="Assets\OVR\Resources\OVRMRCameraFrame.shader" />
+    <None Include="Assets\OVR\Resources\OVRMRClipPlane.shader" />
     <None Include="Assets\OVR\Resources\Underlay Impostor.shader" />
     <None Include="Assets\OVR\Resources\Underlay Transparent Occluder.shader" />
     <None Include="Assets\OVR\Resources\Unlit Transparent Color.shader" />
     <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
     <None Include="Assets\OVR\Shaders\Unlit Crosshair.shader" />
+    <None Include="Assets\OVRHarness\LICENSE.txt" />
+    <None Include="Assets\OVRHarness\Resources\help.txt" />
+    <None Include="Assets\OVRHarness\Resources\intro.txt" />
+    <None Include="Assets\OVRHarness\Resources\scenes.txt" />
+    <None Include="Assets\OVRInspector\LICENSE.txt" />
+    <None Include="Assets\OVRInspector\Resources\OVRSettings.txt" />
+    <None Include="Assets\OVRInspector\Resources\Quit.txt" />
+    <None Include="Assets\OVRInspector\Resources\UISettings.txt" />
+    <None Include="Assets\OVRInspector\Shaders\Particle Alpha Blend-AfterTrans-TransAlphaCutoff.shader" />
+    <None Include="Assets\OVRInspector\Shaders\Particle-Alpha-Premultiply-AfterTrans.shader" />
+    <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTest.shader" />
+    <None Include="Assets\OVRInspector\Shaders\UI-OptionalZTestFont.shader" />
+    <None Include="Assets\OvrAvatar\Content\Materials\AvatarMaterialStateShader.cginc" />
+    <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShader.shader" />
+    <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderPBS.shader" />
+    <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
+    <None Include="Assets\Parse\Parse.Unity.xml" />
+    <None Include="Assets\Plugins\Android\assets\placeholder.txt" />
     <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
     <None Include="Assets\ProCore\ProBuilder\About\Credits.txt" />
     <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
@@ -329,6 +406,7 @@
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\third_party_notices.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
