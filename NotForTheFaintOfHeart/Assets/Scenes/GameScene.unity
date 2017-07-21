@@ -3392,6 +3392,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114772670887948006, guid: 06cce2449f29bd245917889d265d58c9,
+        type: 2}
+      propertyPath: GravityModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853790698524682, guid: 06cce2449f29bd245917889d265d58c9,
+        type: 2}
+      propertyPath: _redD
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853790698524682, guid: 06cce2449f29bd245917889d265d58c9,
+        type: 2}
+      propertyPath: _redI
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853790698524682, guid: 06cce2449f29bd245917889d265d58c9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965654163861738, guid: 06cce2449f29bd245917889d265d58c9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06cce2449f29bd245917889d265d58c9, type: 2}
   m_IsPrefabParent: 0

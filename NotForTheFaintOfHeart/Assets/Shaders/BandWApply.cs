@@ -9,6 +9,8 @@ public class BandWApply : MonoBehaviour
     public Shader bandw;
     public Texture textRamp;
     private Material material;
+    public float _redI;
+    public float _redD;
 
     void Awake()
     {
@@ -21,6 +23,10 @@ public class BandWApply : MonoBehaviour
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
         material.SetTexture("_RampTex", textRamp);
+
+        material.SetFloat("_redI", _redI);
+        material.SetFloat("_redD", _redD);
+
         Graphics.Blit(source, destination, material);
     }
 }

@@ -29,4 +29,9 @@ public class VRButton : MonoBehaviour
     {
         backgroundImage.color = normalColor;
     }
+
+    public virtual void OnClick()
+    {
+        Debug.Log("Click");
+    }
 }
