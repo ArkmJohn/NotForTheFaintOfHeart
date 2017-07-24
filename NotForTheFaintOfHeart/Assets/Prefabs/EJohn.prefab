@@ -3236,11 +3236,11 @@ MonoBehaviour:
       \       : {\n                        },\n                        \"_range\"
       \         : \"4\",\n                        \"_canDetectSelf\"  : \"False\",\n
       \                       \"_horizontalAngle\" : \"360\",\n                        \"_verticalAngle\"
-      \  : \"180\",\n                        \"_lineOfSight\"     : \"True\",\n                        \"_lineOfSightMask\"
+      \  : \"180\",\n                        \"_lineOfSight\"     : \"False\",\n                        \"_lineOfSightMask\"
       : \"-5\"\n                    }\n                }\n            },\n            \"_customElements\"
       : {\n            }\n        }\n    }\n}"
     _serializedMetaDocument: <meta><element0><key>/component/_ai+_selected</key><value
-      type="System.Int32">6</value></element0><element1><key>/component/_ai/_navigator/_graphTags+_foldout</key><value
+      type="System.Int32">0</value></element0><element1><key>/component/_ai/_navigator/_graphTags+_foldout</key><value
       type="System.Boolean">False</value></element1></meta>
     _serializedObjects:
     - {fileID: 4900000, guid: 224a05dee97c67c47aba645a66ea6cea, type: 3}
