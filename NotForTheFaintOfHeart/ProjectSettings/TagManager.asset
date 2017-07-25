@@ -11,6 +11,7 @@ TagManager:
   - Fader
   - dontmove
   - listlast
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - TeleportPoints
   - DemoUI
   - Toys
-  - 
+  - CanTeleport
   - 
   - 
   - 
