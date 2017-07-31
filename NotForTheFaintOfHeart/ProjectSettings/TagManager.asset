@@ -12,6 +12,7 @@ TagManager:
   - dontmove
   - listlast
   - Interactable
+  - PlayerHand
   layers:
   - Default
   - TransparentFX
