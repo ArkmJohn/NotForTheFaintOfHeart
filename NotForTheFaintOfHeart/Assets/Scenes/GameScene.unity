@@ -109,6 +109,77 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5793980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 5793982}
+  - component: {fileID: 5793981}
+  m_Layer: 0
+  m_Name: JohnWaypointRoute
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &5793981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 5793980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 1
+    _includeCustomData: 0
+    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
+      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
+      reference="1"><_mountPoint sceneobject="38d9c234-83b9-42c9-aa2b-4f55165d1060"
+      component="0"></_mountPoint><_setName>Waypoint Network</_setName><_setType>Network</_setType><_networkColor>0.6,0.5529412,0.009411765,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
+      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>19.61196,0,-5.405075</_position><_range>0.5</_range></element0><element1
+      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>27.33281,0,-5.0109</_position><_range>0.5</_range></element1><element2
+      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>3.41596,-0.03085947,-14.60717</_position><_range>0.5</_range></element2><element3
+      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>3.689604,0,-5.380744</_position><_range>0.5</_range></element3><element4
+      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-4.764351,0,-12.17954</_position><_range>0.5</_range></element4><element5
+      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-13.47162,0,-12.34184</_position><_range>0.5</_range></element5><element6
+      reference="13"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-13.463,0,-24.39298</_position><_range>0.5</_range></element6><element7
+      reference="15"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-5.210659,0,-24.46121</_position><_range>0.5</_range></element7></_waypoints><_connections><element0
+      reference="4"><wpOne>0</wpOne><wpTwo>1</wpTwo><twoWay>True</twoWay></element0><element1
+      reference="6"><wpOne>1</wpOne><wpTwo>2</wpTwo><twoWay>True</twoWay></element1><element2
+      reference="8"><wpOne>2</wpOne><wpTwo>3</wpTwo><twoWay>True</twoWay></element2><element3
+      reference="10"><wpOne>3</wpOne><wpTwo>4</wpTwo><twoWay>True</twoWay></element3><element4
+      reference="12"><wpOne>4</wpOne><wpTwo>5</wpTwo><twoWay>True</twoWay></element4><element5
+      reference="14"><wpOne>5</wpOne><wpTwo>6</wpTwo><twoWay>True</twoWay></element5><element6
+      reference="16"><wpOne>6</wpOne><wpTwo>7</wpTwo><twoWay>True</twoWay></element6></_connections></_waypointSet></component>
+    _serializedMetaDocument: <meta></meta>
+    _serializedObjects: []
+    _serializedCustomData: []
+--- !u!4 &5793982
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 5793980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.148745, y: -4.925641, z: 18.715256}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &93332809
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +586,14 @@ MonoBehaviour:
     _sceneObject: {fileID: 906988782}
     _sceneComponents:
     - {fileID: 906988784}
+  - _guid: 8c2a143e-2eaa-495f-b88b-20566a3ffa68
+    _sceneObject: {fileID: 1982000949}
+    _sceneComponents:
+    - {fileID: 1982000951}
+  - _guid: 38d9c234-83b9-42c9-aa2b-4f55165d1060
+    _sceneObject: {fileID: 5793980}
+    _sceneComponents:
+    - {fileID: 5793982}
 --- !u!4 &442184224
 Transform:
   m_ObjectHideFlags: 1
@@ -8164,15 +8243,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4997553574630064, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -32.166
+      value: -9.16
       objectReference: {fileID: 0}
     - target: {fileID: 4997553574630064, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.10000014
+      value: -4.95
       objectReference: {fileID: 0}
     - target: {fileID: 4997553574630064, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 25.737
+      value: 17.32
       objectReference: {fileID: 0}
     - target: {fileID: 4997553574630064, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8197,6 +8276,18 @@ Prefab:
     - target: {fileID: 1795251720208742, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
       propertyPath: m_Name
       value: John
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997553574630064, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997553574630064, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997553574630064, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
@@ -12205,15 +12296,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -28.13
+      value: -4.31
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.061
+      value: -4.82
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 11.91
+      value: 3.55
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -12234,6 +12325,18 @@ Prefab:
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
@@ -16774,6 +16877,73 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1956813457}
+--- !u!1 &1982000949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1982000951}
+  - component: {fileID: 1982000950}
+  m_Layer: 0
+  m_Name: ARWaypointRoute
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1982000950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1982000949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 1
+    _includeCustomData: 0
+    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
+      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
+      reference="1"><_mountPoint sceneobject="8c2a143e-2eaa-495f-b88b-20566a3ffa68"
+      component="0"></_mountPoint><_setName>ARWaypointRoute</_setName><_setType>Network</_setType><_networkColor>0,0.6,0,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
+      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>15.78821,-7.881502,7.771178</_position><_range>0.5</_range></element0><element1
+      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-24.61169,-7.850643,-16.22249</_position><_range>0.5</_range></element1><element2
+      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>23.85611,-7.881502,10.93651</_position><_range>0.5</_range></element2><element3
+      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>28.70643,-7.881504,25.24269</_position><_range>0.5</_range></element3><element4
+      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>39.40406,-7.881504,22.92373</_position><_range>0.5</_range></element4><element5
+      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>39.22411,-7.881502,8.036429</_position><_range>0.5</_range></element5></_waypoints><_connections><element0
+      reference="4"><wpOne>0</wpOne><wpTwo>1</wpTwo><twoWay>True</twoWay></element0><element1
+      reference="6"><wpOne>1</wpOne><wpTwo>2</wpTwo><twoWay>True</twoWay></element1><element2
+      reference="8"><wpOne>2</wpOne><wpTwo>3</wpTwo><twoWay>True</twoWay></element2><element3
+      reference="10"><wpOne>3</wpOne><wpTwo>4</wpTwo><twoWay>True</twoWay></element3><element4
+      reference="12"><wpOne>4</wpOne><wpTwo>5</wpTwo><twoWay>True</twoWay></element4></_connections></_waypointSet></component>
+    _serializedMetaDocument: <meta></meta>
+    _serializedObjects: []
+    _serializedCustomData: []
+--- !u!4 &1982000951
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1982000949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.924968, y: 2.9250016, z: -3.8710012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2021930302
 GameObject:
   m_ObjectHideFlags: 0
