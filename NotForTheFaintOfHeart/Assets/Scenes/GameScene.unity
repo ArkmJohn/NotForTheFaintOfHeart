@@ -8289,6 +8289,124 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114072571091266342, guid: e46b57bf75d984248adea55c5386ae88,
+        type: 2}
+      propertyPath: _serializer._preferredSerialization
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072571091266342, guid: e46b57bf75d984248adea55c5386ae88,
+        type: 2}
+      propertyPath: _serializer._serializedDocument
+      value: "\n{\n    \"component\" : {\n        \"-version\" : \"1.8\",\n        \"-type\"
+        \   : \"RAIN.Core.AIRig\",\n        \"-reference\" : \"0\",\n        \"-includecustomdata\"
+        : \"False\",\n        \"_visualMode\"        : \"OnWhenSelected\",\n        \"_useUnityMessages\"
+        \ : \"True\",\n        \"_useFixedUpdate\"    : \"False\",\n        \"_ai\"
+        \               : {\n            \"-reference\" : \"1\",\n            \"_isActive\"
+        \ : \"True\",\n            \"_body\"      : {\n                \"-sceneobject\"
+        : \"4de0a3cd-4ff2-4107-83c8-1d5e75270fbb\"\n            },\n            \"_workingMemory\"
+        : {\n                \"-type\" : \"RAIN.Memory.BasicMemory\",\n                \"-reference\"
+        : \"2\",\n                \"_memoryItems\" : {\n                    \"element0\"
+        : {\n                        \"-reference\" : \"14\",\n                        \"Key\"
+        \       : \"Started\",\n                        \"ValueType\"  : \"System.Int32\",\n
+        \                       \"Value\"      : {\n                            \"-type\"
+        : \"System.Int32\",\n                            \"#text\" : \"0\"\n                        }\n
+        \                   }\n                }\n            },\n            \"_mind\"
+        \         : {\n                \"-type\" : \"RAIN.Minds.BasicMind\",\n                \"-reference\"
+        : \"3\",\n                \"_behaviorTree\" : {\n                    \"-object\"
+        : \"0\"\n                },\n                \"_behaviorTreeBindings\" : {\n
+        \               }\n            },\n            \"_motor\"         : {\n                \"-type\"
+        : \"RAIN.Motion.BasicMotor\",\n                \"-reference\" : \"4\",\n                \"_speed\"
+        \    : \"1\",\n                \"_rotationSpeed\" : \"360\",\n                \"_closeEnoughDistance\"
+        : \"0.1\",\n                \"_closeEnoughAngle\"    : \"0.1\",\n                \"_faceBeforeMoveAngle\"
+        : \"360\",\n                \"_maxHeightOffset\"     : \"1\",\n                \"_allow3DMovement\"
+        \    : \"False\",\n                \"_allow3DRotation\"     : \"False\",\n
+        \               \"_allowOffGraphMovement\" : \"True\",\n                \"_useRootMotion\"
+        \        : \"False\",\n                \"_overrideRootRotation\"  : \"True\",\n
+        \               \"_mecanimParameters\"     : {\n                }\n            },\n
+        \           \"_animator\"      : {\n                \"-type\" : \"RAIN.Animation.BasicAnimator\",\n
+        \               \"-reference\" : \"5\",\n                \"_showVisual\" :
+        \"True\",\n                \"_leftEye\"    : {\n                    \"-reference\"
+        : \"6\",\n                    \"_jointColor\" : \"0,0.6,0,1\",\n                    \"_joint\"
+        \     : {\n                        \"-sceneobject\" : \"\"\n                    },\n
+        \                   \"_jointOffset\" : \"0,0,0\",\n                    \"_jointOrientation\"
+        : \"0,0,0\",\n                    \"_maxLeftRight\"     : \"60\",\n                    \"_maxUpDown\"
+        \       : \"45\",\n                    \"_weight\"           : \"1\"\n                },\n
+        \               \"_rightEye\"   : {\n                    \"-reference\" :
+        \"7\",\n                    \"_jointColor\" : \"0,0.6,0,1\",\n                    \"_joint\"
+        \     : {\n                        \"-sceneobject\" : \"\"\n                    },\n
+        \                   \"_jointOffset\" : \"0,0,0\",\n                    \"_jointOrientation\"
+        : \"0,0,0\",\n                    \"_maxLeftRight\"     : \"60\",\n                    \"_maxUpDown\"
+        \       : \"45\",\n                    \"_weight\"           : \"1\"\n                },\n
+        \               \"_head\"       : {\n                    \"-reference\" :
+        \"8\",\n                    \"_jointColor\" : \"0.6,0,0.6,1\",\n                    \"_joint\"
+        \     : {\n                        \"-sceneobject\" : \"\"\n                    },\n
+        \                   \"_jointOffset\" : \"0,0,0\",\n                    \"_jointOrientation\"
+        : \"0,0,0\",\n                    \"_maxLeftRight\"     : \"60\",\n                    \"_maxUpDown\"
+        \       : \"45\",\n                    \"_weight\"           : \"1\"\n                },\n
+        \               \"_neck\"       : {\n                    \"-reference\" :
+        \"9\",\n                    \"_jointColor\" : \"0.6,0,0.6,1\",\n                    \"_joint\"
+        \     : {\n                        \"-sceneobject\" : \"\"\n                    },\n
+        \                   \"_jointOffset\" : \"0,0,0\",\n                    \"_jointOrientation\"
+        : \"0,0,0\",\n                    \"_maxLeftRight\"     : \"60\",\n                    \"_maxUpDown\"
+        \       : \"45\",\n                    \"_weight\"           : \"1\"\n                },\n
+        \               \"_lookTime\"   : \"1\",\n                \"_minimumTargetChange\"
+        : \"0.1\",\n                \"_resetEachFrame\"      : \"False\"\n            },\n
+        \           \"_navigator\"     : {\n                \"-type\" : \"RAIN.Navigation.BasicNavigator\",\n
+        \               \"-reference\" : \"10\",\n                \"_drawPaths\" :
+        \"False\",\n                \"_pathColor\" : \"0,0.6,0,1\",\n                \"_outlineColorOffset\"
+        : \"-0.5\",\n                \"_maxPathfindingSteps\" : \"100\",\n                \"_maxPathLength\"
+        \      : \"0\",\n                \"_padding\"             : \"0\",\n                \"_graphTags\"
+        \          : {\n                }\n            },\n            \"_senses\"
+        \       : {\n                \"-type\" : \"RAIN.Perception.BasicSenses\",\n
+        \               \"-reference\" : \"11\",\n                \"_sensors\"   :
+        {\n                    \"element0\" : {\n                        \"-type\"
+        : \"RAIN.Perception.Sensors.AudioSensor\",\n                        \"-reference\"
+        : \"12\",\n                        \"_showVisual\" : \"True\",\n                        \"_sensorName\"
+        : \"JohnAudioSensor\",\n                        \"_isActive\"   : \"True\",\n
+        \                       \"_sensorColor\" : \"0,0,0.6,1\",\n                        \"_mountPoint\"
+        \ : {\n                            \"-sceneobject\" : \"4de0a3cd-4ff2-4107-83c8-1d5e75270fbb\",\n
+        \                           \"-component\"   : \"0\"\n                        },\n
+        \                       \"_positionOffset\" : \"0,0,0\",\n                        \"_angleOffset\"
+        \   : \"0,0,0\",\n                        \"_filters\"        : {\n                        },\n
+        \                       \"_range\"          : \"6\",\n                        \"_canDetectSelf\"
+        \ : \"False\",\n                        \"_volumeThreshold\" : \"0.1\"\n                    },\n
+        \                   \"element1\" : {\n                        \"-type\" :
+        \"RAIN.Perception.Sensors.VisualSensor\",\n                        \"-reference\"
+        : \"13\",\n                        \"_showVisual\" : \"True\",\n                        \"_sensorName\"
+        : \"JohnVisualSensor\",\n                        \"_isActive\"   : \"True\",\n
+        \                       \"_sensorColor\" : \"0.6,0,0.6,1\",\n                        \"_mountPoint\"
+        \ : {\n                            \"-sceneobject\" : \"4de0a3cd-4ff2-4107-83c8-1d5e75270fbb\",\n
+        \                           \"-component\"   : \"0\"\n                        },\n
+        \                       \"_positionOffset\" : \"0,0,0\",\n                        \"_angleOffset\"
+        \   : \"0,0,0\",\n                        \"_filters\"        : {\n                        },\n
+        \                       \"_range\"          : \"4\",\n                        \"_canDetectSelf\"
+        \ : \"False\",\n                        \"_horizontalAngle\" : \"360\",\n
+        \                       \"_verticalAngle\"   : \"180\",\n                        \"_lineOfSight\"
+        \    : \"True\",\n                        \"_lineOfSightMask\" : \"-5\"\n
+        \                   }\n                }\n            },\n            \"_customElements\"
+        : {\n            }\n        }\n    }\n}"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072571091266342, guid: e46b57bf75d984248adea55c5386ae88,
+        type: 2}
+      propertyPath: _serializer._serializedMetaDocument
+      value: <meta><element0><key>/component/_ai+_selected</key><value type="System.Int32">1</value></element0><element1><key>/component/_ai/_navigator/_graphTags+_foldout</key><value
+        type="System.Boolean">False</value></element1></meta>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072571091266342, guid: e46b57bf75d984248adea55c5386ae88,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072571091266342, guid: e46b57bf75d984248adea55c5386ae88,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: 224a05dee97c67c47aba645a66ea6cea, type: 3}
+    - target: {fileID: 114072571091266342, guid: e46b57bf75d984248adea55c5386ae88,
+        type: 2}
+      propertyPath: _serializer._serializedCustomData.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e46b57bf75d984248adea55c5386ae88, type: 2}
   m_IsPrefabParent: 0
@@ -12296,7 +12414,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.31
+      value: -3.8211477
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -12304,7 +12422,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 3.55
+      value: 3.6850107
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -12312,7 +12430,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalRotation.z
@@ -12320,7 +12438,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_RootOrder
@@ -12337,6 +12455,57 @@ Prefab:
     - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
       propertyPath: m_LocalScale.z
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114703281328160792, guid: a018c3ac7fadf1448bffc01e817a9ee1,
+        type: 2}
+      propertyPath: _serializer._preferredSerialization
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114703281328160792, guid: a018c3ac7fadf1448bffc01e817a9ee1,
+        type: 2}
+      propertyPath: _serializer._serializedDocument
+      value: <component version="1.8" type="RAIN.Core.AIRig" reference="0" includecustomdata="False"><_visualMode>OnWhenSelected</_visualMode><_useUnityMessages>True</_useUnityMessages><_useFixedUpdate>False</_useFixedUpdate><_ai
+        reference="1"><_isActive>True</_isActive><_body sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5"></_body><_workingMemory
+        type="RAIN.Memory.BasicMemory" reference="2"><_memoryItems><element0 reference="13"><Key>Started</Key><ValueType>System.Int32</ValueType><Value
+        type="System.Int32">0</Value></element0></_memoryItems></_workingMemory><_mind
+        type="RAIN.Minds.BasicMind" reference="3"><_behaviorTree object="0"></_behaviorTree><_behaviorTreeBindings></_behaviorTreeBindings></_mind><_motor
+        type="RAIN.Motion.BasicMotor" reference="4"><_speed>1</_speed><_rotationSpeed>360</_rotationSpeed><_closeEnoughDistance>0.1</_closeEnoughDistance><_closeEnoughAngle>0.1</_closeEnoughAngle><_faceBeforeMoveAngle>360</_faceBeforeMoveAngle><_maxHeightOffset>1</_maxHeightOffset><_allow3DMovement>False</_allow3DMovement><_allow3DRotation>False</_allow3DRotation><_allowOffGraphMovement>True</_allowOffGraphMovement><_useRootMotion>False</_useRootMotion><_overrideRootRotation>True</_overrideRootRotation><_mecanimParameters></_mecanimParameters></_motor><_animator
+        type="RAIN.Animation.BasicAnimator" reference="5"><_showVisual>True</_showVisual><_leftEye
+        reference="6"><_jointColor>0.6,0.5529412,0.009411765,1</_jointColor><_joint
+        sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_leftEye><_rightEye
+        reference="7"><_jointColor>0.6,0.5529412,0.009411765,1</_jointColor><_joint
+        sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_rightEye><_head
+        reference="8"><_jointColor>0.6,0,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_head><_neck
+        reference="9"><_jointColor>0.6,0,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_neck><_lookTime>1</_lookTime><_minimumTargetChange>0.1</_minimumTargetChange><_resetEachFrame>False</_resetEachFrame></_animator><_navigator
+        type="RAIN.Navigation.BasicNavigator" reference="10"><_drawPaths>False</_drawPaths><_pathColor>0,0.6,0,1</_pathColor><_outlineColorOffset>-0.5</_outlineColorOffset><_maxPathfindingSteps>100</_maxPathfindingSteps><_maxPathLength>0</_maxPathLength><_padding>0</_padding><_graphTags></_graphTags></_navigator><_senses
+        type="RAIN.Perception.BasicSenses" reference="11"><_sensors><element0 type="RAIN.Perception.Sensors.VisualSensor"
+        reference="12"><_showVisual>True</_showVisual><_sensorName>ARVisualSensor</_sensorName><_isActive>True</_isActive><_sensorColor>0.6,0,0,1</_sensorColor><_mountPoint
+        sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>10</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>360</_horizontalAngle><_verticalAngle>180</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element0></_sensors></_senses><_customElements></_customElements></_ai></component>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114703281328160792, guid: a018c3ac7fadf1448bffc01e817a9ee1,
+        type: 2}
+      propertyPath: _serializer._serializedMetaDocument
+      value: <meta><element0><key>/component/_ai+_selected</key><value type="System.Int32">1</value></element0><element1><key>/component/_ai/_navigator/_graphTags+_foldout</key><value
+        type="System.Boolean">False</value></element1></meta>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114703281328160792, guid: a018c3ac7fadf1448bffc01e817a9ee1,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114703281328160792, guid: a018c3ac7fadf1448bffc01e817a9ee1,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: d923c1c2735e598499f828ce098282cb, type: 3}
+    - target: {fileID: 114703281328160792, guid: a018c3ac7fadf1448bffc01e817a9ee1,
+        type: 2}
+      propertyPath: _serializer._serializedCustomData.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
