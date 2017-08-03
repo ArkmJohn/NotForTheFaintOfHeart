@@ -8380,11 +8380,11 @@ Prefab:
         \                       \"_positionOffset\" : \"0,0,0\",\n                        \"_angleOffset\"
         \   : \"0,0,0\",\n                        \"_filters\"        : {\n                        },\n
         \                       \"_range\"          : \"8\",\n                        \"_canDetectSelf\"
-        \ : \"False\",\n                        \"_horizontalAngle\" : \"35\",\n                        \"_verticalAngle\"
-        \  : \"70\",\n                        \"_lineOfSight\"     : \"False\",\n
-        \                       \"_lineOfSightMask\" : \"-5\"\n                    },\n
-        \                   \"element2\" : {\n                        \"-type\" :
-        \"RAIN.Perception.Sensors.VisualSensor\",\n                        \"-reference\"
+        \ : \"False\",\n                        \"_horizontalAngle\" : \"120\",\n
+        \                       \"_verticalAngle\"   : \"70\",\n                        \"_lineOfSight\"
+        \    : \"True\",\n                        \"_lineOfSightMask\" : \"-5\"\n
+        \                   },\n                    \"element2\" : {\n                        \"-type\"
+        : \"RAIN.Perception.Sensors.VisualSensor\",\n                        \"-reference\"
         : \"15\",\n                        \"_showVisual\" : \"True\",\n                        \"_sensorName\"
         : \"StartSensor\",\n                        \"_isActive\"   : \"True\",\n
         \                       \"_sensorColor\" : \"0.6,0,0,1\",\n                        \"_mountPoint\"
@@ -8393,11 +8393,11 @@ Prefab:
         \                       \"_positionOffset\" : \"0.09833336,0,0\",\n                        \"_angleOffset\"
         \   : \"0,0,0\",\n                        \"_filters\"        : {\n                        },\n
         \                       \"_range\"          : \"8\",\n                        \"_canDetectSelf\"
-        \ : \"False\",\n                        \"_horizontalAngle\" : \"35\",\n                        \"_verticalAngle\"
-        \  : \"70\",\n                        \"_lineOfSight\"     : \"False\",\n
-        \                       \"_lineOfSightMask\" : \"-5\"\n                    }\n
-        \               }\n            },\n            \"_customElements\" : {\n            }\n
-        \       }\n    }\n}"
+        \ : \"False\",\n                        \"_horizontalAngle\" : \"120\",\n
+        \                       \"_verticalAngle\"   : \"70\",\n                        \"_lineOfSight\"
+        \    : \"True\",\n                        \"_lineOfSightMask\" : \"-5\"\n
+        \                   }\n                }\n            },\n            \"_customElements\"
+        : {\n            }\n        }\n    }\n}"
       objectReference: {fileID: 0}
     - target: {fileID: 114072571091266342, guid: e46b57bf75d984248adea55c5386ae88,
         type: 2}
@@ -12145,29 +12145,61 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1723714737808762, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1232530995783358, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1619298673819308, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1652189993172792, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483399683866460, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1163423047579034, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123755780842710, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483399683866460, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723714737808762, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232530995783358, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619298673819308, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652189993172792, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194258310325250, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979351479190328, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188193229229670, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855226796462914, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675172305634850, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438864697413380, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173494153772888, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
@@ -12521,9 +12553,9 @@ Prefab:
         type="RAIN.Navigation.BasicNavigator" reference="10"><_drawPaths>False</_drawPaths><_pathColor>0,0.6,0,1</_pathColor><_outlineColorOffset>-0.5</_outlineColorOffset><_maxPathfindingSteps>100</_maxPathfindingSteps><_maxPathLength>0</_maxPathLength><_padding>0</_padding><_graphTags></_graphTags></_navigator><_senses
         type="RAIN.Perception.BasicSenses" reference="11"><_sensors><element0 type="RAIN.Perception.Sensors.VisualSensor"
         reference="12"><_showVisual>True</_showVisual><_sensorName>ARVisualSensor</_sensorName><_isActive>True</_isActive><_sensorColor>0.6,0,0,1</_sensorColor><_mountPoint
-        sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>10</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>18</_horizontalAngle><_verticalAngle>70</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element0><element1
+        sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>10</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>70</_horizontalAngle><_verticalAngle>50</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element0><element1
         type="RAIN.Perception.Sensors.VisualSensor" reference="14"><_showVisual>True</_showVisual><_sensorName>StartSensor</_sensorName><_isActive>True</_isActive><_sensorColor>0.6,0,0,1</_sensorColor><_mountPoint
-        sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>10</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>18</_horizontalAngle><_verticalAngle>70</_verticalAngle><_lineOfSight>False</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element1></_sensors></_senses><_customElements></_customElements></_ai></component>
+        sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>10</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>70</_horizontalAngle><_verticalAngle>50</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element1></_sensors></_senses><_customElements></_customElements></_ai></component>
       objectReference: {fileID: 0}
     - target: {fileID: 114703281328160792, guid: a018c3ac7fadf1448bffc01e817a9ee1,
         type: 2}
