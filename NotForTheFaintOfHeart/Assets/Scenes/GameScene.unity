@@ -1237,7 +1237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.002, y: 0.0067499}
+  m_AnchoredPosition: {x: 0.0020000003, y: 0.0067499}
   m_SizeDelta: {x: 664, y: 564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758245266
@@ -8368,7 +8368,7 @@ Prefab:
         \                           \"-component\"   : \"0\"\n                        },\n
         \                       \"_positionOffset\" : \"0,0,0\",\n                        \"_angleOffset\"
         \   : \"0,0,0\",\n                        \"_filters\"        : {\n                        },\n
-        \                       \"_range\"          : \"6\",\n                        \"_canDetectSelf\"
+        \                       \"_range\"          : \"8\",\n                        \"_canDetectSelf\"
         \ : \"False\",\n                        \"_volumeThreshold\" : \"0.1\"\n                    },\n
         \                   \"element1\" : {\n                        \"-type\" :
         \"RAIN.Perception.Sensors.VisualSensor\",\n                        \"-reference\"
@@ -8379,12 +8379,12 @@ Prefab:
         \                           \"-component\"   : \"0\"\n                        },\n
         \                       \"_positionOffset\" : \"0,0,0\",\n                        \"_angleOffset\"
         \   : \"0,0,0\",\n                        \"_filters\"        : {\n                        },\n
-        \                       \"_range\"          : \"4\",\n                        \"_canDetectSelf\"
-        \ : \"False\",\n                        \"_horizontalAngle\" : \"360\",\n
-        \                       \"_verticalAngle\"   : \"180\",\n                        \"_lineOfSight\"
-        \    : \"True\",\n                        \"_lineOfSightMask\" : \"-5\"\n
-        \                   },\n                    \"element2\" : {\n                        \"-type\"
-        : \"RAIN.Perception.Sensors.VisualSensor\",\n                        \"-reference\"
+        \                       \"_range\"          : \"8\",\n                        \"_canDetectSelf\"
+        \ : \"False\",\n                        \"_horizontalAngle\" : \"35\",\n                        \"_verticalAngle\"
+        \  : \"70\",\n                        \"_lineOfSight\"     : \"False\",\n
+        \                       \"_lineOfSightMask\" : \"-5\"\n                    },\n
+        \                   \"element2\" : {\n                        \"-type\" :
+        \"RAIN.Perception.Sensors.VisualSensor\",\n                        \"-reference\"
         : \"15\",\n                        \"_showVisual\" : \"True\",\n                        \"_sensorName\"
         : \"StartSensor\",\n                        \"_isActive\"   : \"True\",\n
         \                       \"_sensorColor\" : \"0.6,0,0,1\",\n                        \"_mountPoint\"
@@ -8392,11 +8392,12 @@ Prefab:
         \                           \"-component\"   : \"0\"\n                        },\n
         \                       \"_positionOffset\" : \"0.09833336,0,0\",\n                        \"_angleOffset\"
         \   : \"0,0,0\",\n                        \"_filters\"        : {\n                        },\n
-        \                       \"_range\"          : \"10\",\n                        \"_canDetectSelf\"
+        \                       \"_range\"          : \"8\",\n                        \"_canDetectSelf\"
         \ : \"False\",\n                        \"_horizontalAngle\" : \"35\",\n                        \"_verticalAngle\"
-        \  : \"76\",\n                        \"_lineOfSight\"     : \"True\",\n                        \"_lineOfSightMask\"
-        : \"-5\"\n                    }\n                }\n            },\n            \"_customElements\"
-        : {\n            }\n        }\n    }\n}"
+        \  : \"70\",\n                        \"_lineOfSight\"     : \"False\",\n
+        \                       \"_lineOfSightMask\" : \"-5\"\n                    }\n
+        \               }\n            },\n            \"_customElements\" : {\n            }\n
+        \       }\n    }\n}"
       objectReference: {fileID: 0}
     - target: {fileID: 114072571091266342, guid: e46b57bf75d984248adea55c5386ae88,
         type: 2}
@@ -12067,7 +12068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.19, y: 0.000026104157}
+  m_AnchoredPosition: {x: -4.1900005, y: 0.000026104157}
   m_SizeDelta: {x: 37.64, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1374549693
@@ -12143,6 +12144,30 @@ Prefab:
     - target: {fileID: 4150334969907740, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723714737808762, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232530995783358, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619298673819308, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652189993172792, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483399683866460, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163423047579034, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2e856629655bbf49affc6b7a74eeb01, type: 2}
@@ -12496,9 +12521,9 @@ Prefab:
         type="RAIN.Navigation.BasicNavigator" reference="10"><_drawPaths>False</_drawPaths><_pathColor>0,0.6,0,1</_pathColor><_outlineColorOffset>-0.5</_outlineColorOffset><_maxPathfindingSteps>100</_maxPathfindingSteps><_maxPathLength>0</_maxPathLength><_padding>0</_padding><_graphTags></_graphTags></_navigator><_senses
         type="RAIN.Perception.BasicSenses" reference="11"><_sensors><element0 type="RAIN.Perception.Sensors.VisualSensor"
         reference="12"><_showVisual>True</_showVisual><_sensorName>ARVisualSensor</_sensorName><_isActive>True</_isActive><_sensorColor>0.6,0,0,1</_sensorColor><_mountPoint
-        sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>10</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>360</_horizontalAngle><_verticalAngle>180</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element0><element1
+        sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>10</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>18</_horizontalAngle><_verticalAngle>70</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element0><element1
         type="RAIN.Perception.Sensors.VisualSensor" reference="14"><_showVisual>True</_showVisual><_sensorName>StartSensor</_sensorName><_isActive>True</_isActive><_sensorColor>0.6,0,0,1</_sensorColor><_mountPoint
-        sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>14</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>18</_horizontalAngle><_verticalAngle>68</_verticalAngle><_lineOfSight>False</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element1></_sensors></_senses><_customElements></_customElements></_ai></component>
+        sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>10</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>18</_horizontalAngle><_verticalAngle>70</_verticalAngle><_lineOfSight>False</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element1></_sensors></_senses><_customElements></_customElements></_ai></component>
       objectReference: {fileID: 0}
     - target: {fileID: 114703281328160792, guid: a018c3ac7fadf1448bffc01e817a9ee1,
         type: 2}
@@ -12743,7 +12768,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1535620924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.496, y: 1.403, z: -5.379}
+  m_LocalPosition: {x: 32.44, y: -0.69, z: -20.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1625748790}
