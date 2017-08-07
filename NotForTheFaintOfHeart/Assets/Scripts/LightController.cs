@@ -6,20 +6,22 @@ public class LightController : MonoBehaviour
 {
     public float minFlickerTime = 0.1f;
     public float maxFlickerTime = 0.5f;
+	GameObject player;
+	public bool isFlickerLight = false;
 
     [SerializeField]
     private List<Light> lights = new List<Light>();
     private bool shouldFlicker;
     void Awake()
     {
+		player = FindObjectOfType<FlashlightControl>().gameObject;
         foreach (Transform a in transform)
-        {
+		{
             if(a.gameObject.GetComponent<Light>() != null)
             {
                 lights.Add(a.gameObject.GetComponent<Light>());
             }
         }
-        
     }
 
     void Start()
@@ -29,14 +31,21 @@ public class LightController : MonoBehaviour
 
     void Update()
     {
-        if (FindDistNearestEnemy() < 5)
+		if (shouldFlicker && isFlickerLight)
+		{
+			StartCoroutine(Flash2());
+		}
+
+		else if (GetPlayerDistance() <= 8 && isFlickerLight) 
+		{
+			shouldFlicker = true;
+		}
+
+		else if (FindDistNearestEnemy() < 5 && isFlickerLight)
         {
             shouldFlicker = true;
         }
-        if (shouldFlicker)
-        {
-            StartCoroutine(Flash2());
-        }
+			
         //if (shouldFlicker == false)
         //{
         //    //this.myLight.enabled = false;
@@ -45,6 +54,8 @@ public class LightController : MonoBehaviour
         //        a.enabled = false;
         //    }
         //}
+
+		Debug.Log (shouldFlicker);
     }
 
     public void Flicker(float flickerTimes)
@@ -69,7 +80,6 @@ public class LightController : MonoBehaviour
         {
             a.enabled = ! a.enabled;
         }
-
     }
 
     IEnumerator Flash(float flickerTimes)
@@ -92,7 +102,6 @@ public class LightController : MonoBehaviour
         shouldFlicker = false;
         yield return new WaitForSeconds(Random.Range(minFlickerTime, maxFlickerTime));
         TurnLights();
-
     }
 
     float FindDistNearestEnemy()
@@ -109,9 +118,14 @@ public class LightController : MonoBehaviour
                 enemyObject = a.gameObject;
                 dist = distanceTemp;
             }
-
         }
 
         return dist;
     }
+
+	float GetPlayerDistance()
+	{
+		float dist = Vector3.Distance (this.transform.position, player.transform.position);
+		return dist;
+	}
 }
