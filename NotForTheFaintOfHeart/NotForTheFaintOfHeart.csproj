@@ -233,6 +233,7 @@
     <Compile Include="Assets\Scripts\LightController.cs" />
     <Compile Include="Assets\Scripts\LightSwitchControl.cs" />
     <Compile Include="Assets\Scripts\PlayGame.cs" />
+    <Compile Include="Assets\Scripts\PlayGameButton.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\CustomEvents\ChangeColorLight.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\CustomEvents\CustomEvent.cs" />
