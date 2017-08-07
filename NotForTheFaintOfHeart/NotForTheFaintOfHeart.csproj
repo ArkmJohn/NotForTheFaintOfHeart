@@ -219,6 +219,7 @@
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Procedural Mesh\ExtrudeRandomEdges.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
+    <Compile Include="Assets\Scripts\ARMemoryHandler.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CharacterScript.cs" />
@@ -230,6 +231,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HidingSpot.cs" />
     <Compile Include="Assets\Scripts\InteractableObject.cs" />
+    <Compile Include="Assets\Scripts\JohnMemoryHandler.cs" />
     <Compile Include="Assets\Scripts\LightController.cs" />
     <Compile Include="Assets\Scripts\LightSwitchControl.cs" />
     <Compile Include="Assets\Scripts\PlayGame.cs" />
@@ -244,6 +246,7 @@
     <Compile Include="Assets\Scripts\ScriptableObject\CustomEvents\SetCameraEffect.cs" />
     <Compile Include="Assets\Scripts\SpecialEvent1.cs" />
     <Compile Include="Assets\Scripts\Test\CustomColorSat.cs" />
+    <Compile Include="Assets\Scripts\Test\CustomRunToPoint.cs" />
     <Compile Include="Assets\Scripts\VRButton.cs" />
     <Compile Include="Assets\Shaders\BandWApply.cs" />
     <Compile Include="Assets\Shaders\ColorCorrectCurve.cs" />
@@ -364,6 +367,7 @@
     <None Include="Assets\AI\BehaviorTrees\Basic.txt" />
     <None Include="Assets\AI\BehaviorTrees\BasicTree.txt" />
     <None Include="Assets\AI\BehaviorTrees\John.txt" />
+    <None Include="Assets\AI\BehaviorTrees\NewAR.txt" />
     <None Include="Assets\AI\BehaviorTrees\WaypointMovement.txt" />
     <None Include="Assets\AI\BehaviorTrees\WaypointTest.txt" />
     <None Include="Assets\Blood decal pack\readme.txt" />

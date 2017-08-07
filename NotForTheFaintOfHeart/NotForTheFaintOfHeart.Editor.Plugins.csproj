@@ -188,6 +188,7 @@
     <None Include="Assets\AI\BehaviorTrees\Basic.txt" />
     <None Include="Assets\AI\BehaviorTrees\BasicTree.txt" />
     <None Include="Assets\AI\BehaviorTrees\John.txt" />
+    <None Include="Assets\AI\BehaviorTrees\NewAR.txt" />
     <None Include="Assets\AI\BehaviorTrees\WaypointMovement.txt" />
     <None Include="Assets\AI\BehaviorTrees\WaypointTest.txt" />
     <None Include="Assets\Blood decal pack\readme.txt" />

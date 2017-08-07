@@ -31,13 +31,15 @@ public class OVRScreenFade : MonoBehaviour
 	/// How long it takes to fade.
 	/// </summary>
 	public float fadeTime = 2.0f;
+    public float fadeTimeB = 1.0f;
 
 	/// <summary>
 	/// The initial screen color.
 	/// </summary>
 	public Color fadeColor = new Color(0.01f, 0.01f, 0.01f, 1.0f);
+    public Color fadeColorB = new Color(0.01f, 0.01f, 0.01f, 1.0f);
 
-	private Material fadeMaterial = null;
+    private Material fadeMaterial = null;
 	private bool isFading = false;
 	private YieldInstruction fadeInstruction = new WaitForEndOfFrame();
 
@@ -100,10 +102,33 @@ public class OVRScreenFade : MonoBehaviour
 		isFading = false;
 	}
 
-	/// <summary>
-	/// Renders the fade overlay when attached to a camera object
-	/// </summary>
-	void OnPostRender()
+    IEnumerator FadeOut()
+    {
+        float elapsedTime = 0.0f;
+        fadeMaterial.color = fadeColorB;
+        Color color = fadeColorB;
+        isFading = true;
+        while (elapsedTime < fadeTime)
+        {
+            yield return fadeInstruction;
+            elapsedTime += Time.deltaTime;
+            //Debug.Log(Mathf.Clamp01(elapsedTime / fadeTime));
+            color.a = Mathf.Clamp01(elapsedTime / fadeTime);
+            //fadeMaterial.color = color;
+            if (color.a == 1)
+            {
+                fadeMaterial.color = Color.black;
+            }
+        }
+        
+        isFading = false;
+
+    }
+
+    /// <summary>
+    /// Renders the fade overlay when attached to a camera object
+    /// </summary>
+    void OnPostRender()
 	{
 		if (isFading)
 		{
