@@ -2830,8 +2830,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1795251720208742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.166, y: 0.10000014, z: 25.737}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -9.16, y: -4.95, z: 17.32}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4884610435004396}
   - {fileID: 4974814770442582}
@@ -3166,8 +3166,12 @@ MonoBehaviour:
       {\n                \"-sceneobject\" : \"4de0a3cd-4ff2-4107-83c8-1d5e75270fbb\"\n
       \           },\n            \"_workingMemory\" : {\n                \"-type\"
       : \"RAIN.Memory.BasicMemory\",\n                \"-reference\" : \"2\",\n                \"_memoryItems\"
-      : {\n                }\n            },\n            \"_mind\"          : {\n
-      \               \"-type\" : \"RAIN.Minds.BasicMind\",\n                \"-reference\"
+      : {\n                    \"element0\" : {\n                        \"-reference\"
+      : \"14\",\n                        \"Key\"        : \"Started\",\n                        \"ValueType\"
+      \ : \"System.Int32\",\n                        \"Value\"      : {\n                            \"-type\"
+      : \"System.Int32\",\n                            \"#text\" : \"0\"\n                        }\n
+      \                   }\n                }\n            },\n            \"_mind\"
+      \         : {\n                \"-type\" : \"RAIN.Minds.BasicMind\",\n                \"-reference\"
       : \"3\",\n                \"_behaviorTree\" : {\n                    \"-object\"
       : \"0\"\n                },\n                \"_behaviorTreeBindings\" : {\n
       \               }\n            },\n            \"_motor\"         : {\n                \"-type\"
@@ -3223,7 +3227,7 @@ MonoBehaviour:
       \                           \"-component\"   : \"0\"\n                        },\n
       \                       \"_positionOffset\" : \"0,0,0\",\n                        \"_angleOffset\"
       \   : \"0,0,0\",\n                        \"_filters\"        : {\n                        },\n
-      \                       \"_range\"          : \"6\",\n                        \"_canDetectSelf\"
+      \                       \"_range\"          : \"8\",\n                        \"_canDetectSelf\"
       \ : \"False\",\n                        \"_volumeThreshold\" : \"0.1\"\n                    },\n
       \                   \"element1\" : {\n                        \"-type\" : \"RAIN.Perception.Sensors.VisualSensor\",\n
       \                       \"-reference\" : \"13\",\n                        \"_showVisual\"
@@ -3234,9 +3238,21 @@ MonoBehaviour:
       \  : \"0\"\n                        },\n                        \"_positionOffset\"
       : \"0,0,0\",\n                        \"_angleOffset\"    : \"0,0,0\",\n                        \"_filters\"
       \       : {\n                        },\n                        \"_range\"
-      \         : \"4\",\n                        \"_canDetectSelf\"  : \"False\",\n
-      \                       \"_horizontalAngle\" : \"360\",\n                        \"_verticalAngle\"
-      \  : \"180\",\n                        \"_lineOfSight\"     : \"True\",\n                        \"_lineOfSightMask\"
+      \         : \"8\",\n                        \"_canDetectSelf\"  : \"False\",\n
+      \                       \"_horizontalAngle\" : \"35\",\n                        \"_verticalAngle\"
+      \  : \"70\",\n                        \"_lineOfSight\"     : \"False\",\n                        \"_lineOfSightMask\"
+      : \"-5\"\n                    },\n                    \"element2\" : {\n                        \"-type\"
+      : \"RAIN.Perception.Sensors.VisualSensor\",\n                        \"-reference\"
+      : \"15\",\n                        \"_showVisual\" : \"True\",\n                        \"_sensorName\"
+      : \"StartSensor\",\n                        \"_isActive\"   : \"True\",\n                        \"_sensorColor\"
+      : \"0.6,0,0,1\",\n                        \"_mountPoint\"  : {\n                            \"-sceneobject\"
+      : \"4de0a3cd-4ff2-4107-83c8-1d5e75270fbb\",\n                            \"-component\"
+      \  : \"0\"\n                        },\n                        \"_positionOffset\"
+      : \"0.09833336,0,0\",\n                        \"_angleOffset\"    : \"0,0,0\",\n
+      \                       \"_filters\"        : {\n                        },\n
+      \                       \"_range\"          : \"8\",\n                        \"_canDetectSelf\"
+      \ : \"False\",\n                        \"_horizontalAngle\" : \"35\",\n                        \"_verticalAngle\"
+      \  : \"70\",\n                        \"_lineOfSight\"     : \"False\",\n                        \"_lineOfSightMask\"
       : \"-5\"\n                    }\n                }\n            },\n            \"_customElements\"
       : {\n            }\n        }\n    }\n}"
     _serializedMetaDocument: <meta><element0><key>/component/_ai+_selected</key><value
