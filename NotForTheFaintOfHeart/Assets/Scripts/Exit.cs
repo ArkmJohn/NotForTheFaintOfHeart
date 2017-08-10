@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Exit : InteractableObject
+public class Exit : MonoBehaviour
 {
 
-    public override void DoStuff()
+    void OnCollisionEnter(Collision other)
     {
-        GameManager.Instance.Win();
+        if(other.gameObject.GetComponent<FlashlightControl>() != null)
+            Application.LoadLevel("Exit");
+
+
     }
 }

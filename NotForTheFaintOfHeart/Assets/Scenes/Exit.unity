@@ -1808,6 +1808,22 @@ Transform:
   m_PrefabParentObject: {fileID: 4814849743144680, guid: ade1930aecba00642bc921d0a11c6528,
     type: 2}
   m_PrefabInternal: {fileID: 1176505989}
+--- !u!1 &389309545 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1894820798828152, guid: df4f34b4d9c3e4443aa56858135c050a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1067130760}
+--- !u!114 &389309546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 389309545}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2170e17ce68e02f4ca1f609417fc07a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &392418433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5053,6 +5069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endCanvas: {fileID: 966377168}
+  playGame: {fileID: 389309546}
 --- !u!95 &979246428
 Animator:
   serializedVersion: 3
