@@ -6494,7 +6494,7 @@ GameObject:
   - component: {fileID: 154393212}
   m_Layer: 0
   m_Name: Cabinet
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7747,7 +7747,7 @@ GameObject:
   - component: {fileID: 194327459}
   m_Layer: 0
   m_Name: Cabinet
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28119,7 +28119,7 @@ GameObject:
   - component: {fileID: 654158331}
   m_Layer: 0
   m_Name: Cabinet
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65340,10 +65340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b432d7c1486ee48bd43badedd716b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scratchObject: {fileID: 0}
-  growl: {fileID: 0}
-  attackClip: {fileID: 0}
-  maxTimer: 10
 --- !u!4 &1262971966 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4581249196423830, guid: a018c3ac7fadf1448bffc01e817a9ee1,
@@ -84154,7 +84150,7 @@ MonoBehaviour:
   HmdResetsY: 1
   HmdRotatesY: 1
   GravityModifier: 1
-  useProfileData: 1
+  useProfileData: 0
 --- !u!143 &1535620931
 CharacterController:
   m_ObjectHideFlags: 0
@@ -93159,10 +93155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b432d7c1486ee48bd43badedd716b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scratchObject: {fileID: 0}
-  growl: {fileID: 0}
-  attackClip: {fileID: 0}
-  maxTimer: 10
 --- !u!4 &1680233555 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4997553574630064, guid: e46b57bf75d984248adea55c5386ae88,
@@ -97026,7 +97018,7 @@ GameObject:
   - component: {fileID: 1765503142}
   m_Layer: 0
   m_Name: Cabinet
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106481,7 +106473,7 @@ GameObject:
   - component: {fileID: 1959139827}
   m_Layer: 0
   m_Name: Cabinet
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114521,7 +114513,7 @@ GameObject:
   - component: {fileID: 2141677369}
   m_Layer: 0
   m_Name: Cabinet
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

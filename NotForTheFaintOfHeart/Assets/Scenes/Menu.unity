@@ -783,7 +783,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeTime: 2
+  fadeTimeB: 1
   fadeColor: {r: 0.01, g: 0.01, b: 0.01, a: 1}
+  fadeColorB: {r: 0.01, g: 0.01, b: 0.01, a: 1}
 --- !u!20 &259234447
 Camera:
   m_ObjectHideFlags: 0
@@ -3878,11 +3880,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4562921832254666, guid: df4f34b4d9c3e4443aa56858135c050a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.942
+      value: 3.216
       objectReference: {fileID: 0}
     - target: {fileID: 4562921832254666, guid: df4f34b4d9c3e4443aa56858135c050a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -2.795
+      value: -2.271
       objectReference: {fileID: 0}
     - target: {fileID: 4562921832254666, guid: df4f34b4d9c3e4443aa56858135c050a, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3919,6 +3921,11 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 3050e507eb5ed494385eea09b8adfe86, type: 3}
+    - target: {fileID: 82204687527422078, guid: df4f34b4d9c3e4443aa56858135c050a,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df4f34b4d9c3e4443aa56858135c050a, type: 2}
   m_IsPrefabParent: 0
@@ -7371,7 +7378,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1996918338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.942, z: -2.795}
+  m_LocalPosition: {x: 0, y: 3.205, z: -2.429}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1767565967}
