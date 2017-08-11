@@ -214,6 +214,7 @@
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CharacterScript.cs" />
+    <Compile Include="Assets\Scripts\Destroyer.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\FadeText.cs" />
