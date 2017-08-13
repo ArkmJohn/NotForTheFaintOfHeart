@@ -13,6 +13,7 @@ TagManager:
   - listlast
   - Interactable
   - PlayerHand
+  - Wall
   layers:
   - Default
   - TransparentFX
