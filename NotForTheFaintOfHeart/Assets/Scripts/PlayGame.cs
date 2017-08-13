@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class PlayGame : MonoBehaviour {
 
@@ -14,7 +15,15 @@ public class PlayGame : MonoBehaviour {
     {
         if (Input.GetButtonDown("Fire2")) // Interactable Fuction
         {
-            Application.LoadLevel("GameScene");
+            PlayTheGame();
         }
+
+        
     }
+
+    public void PlayTheGame()
+    {
+        Application.LoadLevel("GameScene");
+    }
+
 }

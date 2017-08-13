@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class FlashlightControl : MonoBehaviour {
 
-    public GameObject flashlight;
+    public GameObject flashlight, battery;
     public Image batteryChargeContent;
     public CustomEvent flashOn, flashOff;
 
@@ -15,6 +15,11 @@ public class FlashlightControl : MonoBehaviour {
 
     public float batteryChargeCounter;
     public float batteryUseCounter;
+
+    void OnEnable()
+    {
+        battery.SetActive(true);
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -32,7 +37,7 @@ public class FlashlightControl : MonoBehaviour {
         BatteryLogic();
 	}
 
-    void UseFlashLight()
+    public void UseFlashLight()
     {
         if (!hasChargedBattery())
             return;
