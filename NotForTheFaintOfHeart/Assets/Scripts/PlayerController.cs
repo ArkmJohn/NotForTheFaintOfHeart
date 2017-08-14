@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour {
     public bool isHidden = false, hasFlashlight = false;
     public AudioSource heartBeat, heartBeatFast;
     public GameObject interactable;
+    public GameObject cam;
+    public bool isWalking;
 
     [SerializeField]
     private float movementSpeed = 2f;
@@ -27,7 +29,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        cam = Camera.main.gameObject;
 	}
 	
 	// Update is called once per frame
@@ -188,23 +190,25 @@ public class PlayerController : MonoBehaviour {
 
         if (player.leftController != null)
         {
+
             // -- Player Movement -- //
-            // Get player Orientation
             Quaternion orient = Camera.main.transform.rotation;
-
-            // Gets the vector from the input
-            Vector2 tPadVect = player.leftController.GetAxis(tPad);
-            // Gets the direction
-            Vector3 moveDir = orient * Vector3.forward * tPadVect.y + orient * Vector3.right * tPadVect.x;
-            Vector3 playerPosition = player.transform.position; // Gets the players pos
-
-            playerPosition.x += moveDir.x * movementSpeed * Time.deltaTime;
-            playerPosition.z += moveDir.z * movementSpeed * Time.deltaTime;
-
-            player.transform.position = playerPosition;
+            Vector3 tPadVector = player.leftController.GetAxis(tPad);
+            Vector3 moveDir = orient * Vector3.forward * tPadVector.y + orient * Vector3.right * tPadVector.x;
+            if (tPadVector != Vector3.zero)
+            {
+                isWalking = true;
+            }
+            else
+            {
+                isWalking = false;
+            }
+            Vector3 playerPos = player.transform.position;
+            playerPos.x += moveDir.x * movementSpeed * Time.deltaTime;
+            playerPos.z += moveDir.z * movementSpeed * Time.deltaTime;
+            player.transform.position = playerPos;
             // -- End Player Movement Section -- //
 
-            
         }
     }
 
@@ -222,6 +226,7 @@ public class PlayerController : MonoBehaviour {
         if (null != player.rightController)
         {
             // -- Player Rotation -- //
+            /*--
             // Finds the Orientation of the player
             Quaternion orient = player.transform.rotation;
             // Gets the vector from the input
@@ -244,10 +249,11 @@ public class PlayerController : MonoBehaviour {
             eAngle.x = Mathf.LerpAngle(eAngle.x, angle, vertTurnSpeed * Time.deltaTime);
             eAngle.y += tPadVector.x * horTurnSpeed * Time.deltaTime;
             player.transform.rotation = Quaternion.Euler(eAngle);
+            --*/
             // -- End Player Rotation Section -- //
 
             // Uses flashlight
-            if (player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && FindObjectOfType<FlashlightControl>().enabled)
+            if (player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Axis0) && FindObjectOfType<FlashlightControl>().enabled)
             {
                 FindObjectOfType<FlashlightControl>().UseFlashLight();
             }
@@ -257,4 +263,31 @@ public class PlayerController : MonoBehaviour {
     }
 
     #endregion
+
+    void OnDrawGizmos()
+    {
+        Player player = Player.instance;
+
+        if (!player)
+        {
+            return;
+        }
+
+        EVRButtonId tPad = EVRButtonId.k_EButton_SteamVR_Touchpad;
+        Vector3 moveDir = Vector3.zero;
+        if (player.leftController != null)
+        {
+            // -- Player Movement -- //
+            // Get player Orientation
+            Quaternion orient = Camera.main.transform.rotation;
+
+            // Gets the vector from the input
+            Vector2 tPadVect = player.leftController.GetAxis(tPad);
+            // Gets the direction
+            moveDir = orient * Vector3.forward * tPadVect.y + orient * Vector3.right * tPadVect.x;
+        }
+        Gizmos.color = Color.red;
+        //Gizmos.DrawSphere(cam.transform.rotation * Vector3.one + cam.transform.position, 1);
+        //Gizmos.DrawLine(cam.transform.position, cam.transform.rotation * Vector3.forward);
+    }
 }
