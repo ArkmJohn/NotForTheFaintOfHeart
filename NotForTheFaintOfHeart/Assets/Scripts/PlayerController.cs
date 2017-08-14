@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 
     public bool isHidden = false, hasFlashlight = false;
     public AudioSource heartBeat, heartBeatFast;
-    public GameObject interactable;
+    public GameObject interactable, entity, navTarg;
     public GameObject cam;
     public bool isRestart, canPlay;
     public bool isWalking;
@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (isWalking)
         {
-            //rb.AddForce(moveDir * movementSpeed * 50, ForceMode.Force);
+            rb.AddForce(moveDir * movementSpeed * 50, ForceMode.Force);
             //Debug.Log(moveDir * movementSpeed);
             //rb.velocity = moveDir + Player.instance.transform.position;
             //Debug.Log("What");
@@ -88,7 +88,8 @@ public class PlayerController : MonoBehaviour {
             {
                 // Puts the player infront of the hiding spot
                 interactable.GetComponent<HidingSpot>().Exit(this.gameObject);
-
+                entity.SetActive(true);
+                navTarg.SetActive(true);
                 //GetComponent<CharacterController>().enabled = true;
                 isHidden = false;
             }
@@ -97,6 +98,8 @@ public class PlayerController : MonoBehaviour {
                 // Hides the Player
                 interactable.GetComponent<HidingSpot>().Enter(this.gameObject);
                 interactable.GetComponent<InteractableObject>().DoStuff();
+                entity.SetActive(false);
+                navTarg.SetActive(false);
 
                 //GetComponent<CharacterController>().enabled = false;
                 isHidden = true;
