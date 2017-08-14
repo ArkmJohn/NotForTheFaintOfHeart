@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 public class CustomRunToPoint : MonoBehaviour {
 
@@ -10,7 +12,7 @@ public class CustomRunToPoint : MonoBehaviour {
     public void EndGame()
     {
         endCanvas.SetActive(true);
-        playGame.enabled = true;
+        Player.instance.GetComponent<PlayerController>().canPlay = true;
 
     }
 }

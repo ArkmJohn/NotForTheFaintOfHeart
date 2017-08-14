@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour {
 
     public void EndGame()
     {
-        Application.LoadLevel("Exit");
+        SceneManager.LoadScene("Exit", LoadSceneMode.Single);
     }
 
     //public GameObject scratchObject;

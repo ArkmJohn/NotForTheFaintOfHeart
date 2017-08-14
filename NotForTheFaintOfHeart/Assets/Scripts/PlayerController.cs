@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     public AudioSource heartBeat, heartBeatFast;
     public GameObject interactable;
     public GameObject cam;
+    public bool isRestart, canPlay;
     public bool isWalking;
     public Rigidbody rb;
 
@@ -37,12 +39,12 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if (FindDistNearestEnemy() > 10) // Heartbeat Effect
+        if (FindDistNearestEnemy() > 10 && heartBeat != null && heartBeatFast != null) // Heartbeat Effect
         {
             heartBeat.enabled = true;
             heartBeatFast.enabled = false;
         }
-        else
+        else if(heartBeat != null && heartBeatFast != null)
         {
             heartBeat.enabled = false;
             heartBeatFast.enabled = true;
@@ -187,6 +189,14 @@ public class PlayerController : MonoBehaviour {
                     InteractWithInteractable();
                 }
             }
+            if (player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Axis0) || player.leftController.GetPressDown(SteamVR_Controller.ButtonMask.Axis0))
+            {
+                if (isRestart && canPlay)
+                {
+                    Debug.Log("Restart");
+                    SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
+                }
+            }
         }
     }
 
@@ -275,7 +285,7 @@ public class PlayerController : MonoBehaviour {
             // -- End Player Rotation Section -- //
 
             // Uses flashlight
-            if (player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Axis0) && FindObjectOfType<FlashlightControl>().enabled)
+            if (player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Axis0) && FindObjectOfType<FlashlightControl>().enabled && !isRestart)
             {
                 FindObjectOfType<FlashlightControl>().UseFlashLight();
             }

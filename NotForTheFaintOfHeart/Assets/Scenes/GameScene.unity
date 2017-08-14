@@ -16661,6 +16661,7 @@ MonoBehaviour:
     _sceneObject: {fileID: 2062692208}
     _sceneComponents:
     - {fileID: 2062692209}
+    - {fileID: 2062692215}
 --- !u!4 &442184224
 Transform:
   m_ObjectHideFlags: 1
@@ -43141,7 +43142,9 @@ Prefab:
         : \"2\",\n                \"_memoryItems\" : {\n                    \"element0\"
         : {\n                        \"-reference\" : \"3\",\n                        \"Key\"
         \       : \"Player\",\n                        \"ValueType\"  : \"UnityEngine.GameObject\",\n
-        \                       \"Value\"      : {\n                        }\n                    },\n
+        \                       \"Value\"      : {\n                            \"-type\"
+        : \"UnityEngine.GameObject\",\n                            \"-sceneobject\"
+        : \"7a7fec72-9389-4f9d-bceb-4eb3d1a48873\"\n                        }\n                    },\n
         \                   \"element1\" : {\n                        \"-reference\"
         : \"4\",\n                        \"Key\"        : \"PlayerLastSeen\",\n                        \"ValueType\"
         \ : \"UnityEngine.GameObject\",\n                        \"Value\"      :
@@ -43223,7 +43226,7 @@ Prefab:
         \                       \"_range\"          : \"6\",\n                        \"_canDetectSelf\"
         \ : \"False\",\n                        \"_horizontalAngle\" : \"120\",\n
         \                       \"_verticalAngle\"   : \"70\",\n                        \"_lineOfSight\"
-        \    : \"False\",\n                        \"_lineOfSightMask\" : \"16384\"\n
+        \    : \"True\",\n                        \"_lineOfSightMask\" : \"16384\"\n
         \                   },\n                    \"element2\" : {\n                        \"-type\"
         : \"RAIN.Perception.Sensors.VisualSensor\",\n                        \"-reference\"
         : \"17\",\n                        \"_showVisual\" : \"True\",\n                        \"_sensorName\"
@@ -43234,8 +43237,8 @@ Prefab:
         \  : \"0\"\n                        },\n                        \"_positionOffset\"
         : \"0,0,0\",\n                        \"_angleOffset\"    : \"0,0,0\",\n                        \"_filters\"
         \       : {\n                        },\n                        \"_range\"
-        \         : \"8\",\n                        \"_canDetectSelf\"  : \"False\",\n
-        \                       \"_horizontalAngle\" : \"40\",\n                        \"_verticalAngle\"
+        \         : \"6\",\n                        \"_canDetectSelf\"  : \"False\",\n
+        \                       \"_horizontalAngle\" : \"120\",\n                        \"_verticalAngle\"
         \  : \"70\",\n                        \"_lineOfSight\"     : \"False\",\n
         \                       \"_lineOfSightMask\" : \"-5\"\n                    }\n
         \               }\n            },\n            \"_customElements\" : {\n            }\n
@@ -66207,6 +66210,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1716055337513770, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114703281328160792, guid: a018c3ac7fadf1448bffc01e817a9ee1,
         type: 2}
       propertyPath: _serializer._preferredSerialization
@@ -66218,7 +66225,7 @@ Prefab:
       value: <component version="1.8" type="RAIN.Core.AIRig" reference="0" includecustomdata="False"><_visualMode>OnWhenSelected</_visualMode><_useUnityMessages>True</_useUnityMessages><_useFixedUpdate>False</_useFixedUpdate><_ai
         reference="1"><_isActive>True</_isActive><_body sceneobject="3eebdb48-1fee-4e61-8c96-0adc619b48c5"></_body><_workingMemory
         type="RAIN.Memory.BasicMemory" reference="2"><_memoryItems><element0 reference="13"><Key>Player</Key><ValueType>UnityEngine.GameObject</ValueType><Value
-        type="UnityEngine.GameObject" sceneobject="723d8f37-9f11-4160-a036-83a316cddb2c"></Value></element0><element1
+        type="UnityEngine.GameObject" sceneobject="7a7fec72-9389-4f9d-bceb-4eb3d1a48873"></Value></element0><element1
         reference="16"><Key>PlayerLastSeen</Key><ValueType>UnityEngine.GameObject</ValueType><Value></Value></element1><element2
         reference="15"><Key>UpdatedPlayerLastSeen</Key><ValueType>UnityEngine.GameObject</ValueType><Value
         type="UnityEngine.GameObject" sceneobject="955ef84e-0f35-460e-a9d2-b0bc9e86872f"></Value></element2></_memoryItems></_workingMemory><_mind
@@ -66260,10 +66267,6 @@ Prefab:
         type: 2}
       propertyPath: _serializer._serializedCustomData.Array.size
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1716055337513770, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a018c3ac7fadf1448bffc01e817a9ee1, type: 2}
@@ -93378,6 +93381,10 @@ AudioSource:
   m_PrefabParentObject: {fileID: 82250033679252166, guid: dc06161b6d97feb419f45f03b62e14b9,
     type: 2}
   m_PrefabInternal: {fileID: 2144495975}
+--- !u!4 &2062692215 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+  m_PrefabInternal: {fileID: 2144495975}
 --- !u!1 &2062789511
 GameObject:
   m_ObjectHideFlags: 0
@@ -97351,6 +97358,44 @@ Prefab:
         type: 2}
       propertyPath: isLightOn
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114918490132837766, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 2}
+      propertyPath: _serializer._preferredSerialization
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114918490132837766, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 2}
+      propertyPath: _serializer._serializedDocument
+      value: <component version="1.8" type="RAIN.Entities.EntityRig" reference="0"
+        includecustomdata="False"><_visualMode>OnWhenSelected</_visualMode><_useUnityMessages>True</_useUnityMessages><_entity
+        reference="1"><_entityName>Player</_entityName><_isActive>True</_isActive><_form
+        sceneobject="7a7fec72-9389-4f9d-bceb-4eb3d1a48873"></_form><_aspects><element0
+        type="RAIN.Entities.Aspects.VisualAspect" reference="2"><_showVisual>True</_showVisual><_aspectName>PlayerVisualAspect</_aspectName><_isActive>True</_isActive><_aspectColor>0.6,0,0,1</_aspectColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_visualSize>3</_visualSize><_mountPoint
+        sceneobject="7a7fec72-9389-4f9d-bceb-4eb3d1a48873" component="1"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset></element0><element1
+        type="RAIN.Entities.Aspects.AudioAspect" reference="3"><_showVisual>True</_showVisual><_aspectName>PlayerAudioAspect</_aspectName><_isActive>True</_isActive><_aspectColor>0.6,0,0,1</_aspectColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_visualSize>3</_visualSize><_mountPoint
+        sceneobject="7a7fec72-9389-4f9d-bceb-4eb3d1a48873" component="1"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_audioSource
+        sceneobject="7a7fec72-9389-4f9d-bceb-4eb3d1a48873" component="0"></_audioSource></element1></_aspects></_entity></component>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114918490132837766, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 2}
+      propertyPath: _serializer._serializedMetaDocument
+      value: <meta></meta>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114918490132837766, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114918490132837766, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 2}
+      propertyPath: _serializer._serializedCustomData.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114097884793165608, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 2}
+      propertyPath: batteryUseTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
