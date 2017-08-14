@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 114764774898572050}
   m_Layer: 0
   m_Name: Cabinet
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,7 +176,7 @@ GameObject:
   m_Layer: 0
   m_Name: ExitSpot
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -221,7 +221,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1465961906233888}
   m_LocalRotation: {x: -0, y: -0.000067919485, z: -0, w: -1}
-  m_LocalPosition: {x: 0.016669542, y: 0.8606667, z: 0.2069104}
+  m_LocalPosition: {x: 0.016669542, y: 0.407, z: 0.2069104}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_Children: []
   m_Father: {fileID: 4486529282317224}
@@ -234,7 +234,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1285671979830372}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
-  m_LocalPosition: {x: 14.616733, y: 1.5990448, z: -4.4432173}
+  m_LocalPosition: {x: 32.598835, y: -4.96, z: -15.07}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4755652665104582}
@@ -267,7 +267,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1356391473840522}
   m_LocalRotation: {x: -0, y: -0.000067919485, z: -0, w: -1}
-  m_LocalPosition: {x: 0.016666466, y: 0.79733336, z: -0.3140896}
+  m_LocalPosition: {x: 0.016666466, y: 0.41, z: -0.3140896}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_Children: []
   m_Father: {fileID: 4486529282317224}

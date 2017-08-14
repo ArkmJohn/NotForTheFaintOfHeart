@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     public GameObject interactable;
     public GameObject cam;
     public bool isWalking;
+    public Rigidbody rb;
 
     [SerializeField]
     private float movementSpeed = 2f;
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         cam = Camera.main.gameObject;
+        rb = Player.instance.gameObject.GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -63,6 +65,17 @@ public class PlayerController : MonoBehaviour {
         RightHand();
 	}
 
+    void FixedUpdate()
+    {
+        if (isWalking)
+        {
+            //rb.AddForce(moveDir * movementSpeed * 50, ForceMode.Force);
+            //Debug.Log(moveDir * movementSpeed);
+            //rb.velocity = moveDir + Player.instance.transform.position;
+            //Debug.Log("What");
+        }
+    }
+
     void InteractWithInteractable()
     {
         interactable.GetComponent<InteractableObject>().IsFar();
@@ -74,7 +87,7 @@ public class PlayerController : MonoBehaviour {
                 // Puts the player infront of the hiding spot
                 interactable.GetComponent<HidingSpot>().Exit(this.gameObject);
 
-                GetComponent<CharacterController>().enabled = true;
+                //GetComponent<CharacterController>().enabled = true;
                 isHidden = false;
             }
             else
@@ -83,7 +96,7 @@ public class PlayerController : MonoBehaviour {
                 interactable.GetComponent<HidingSpot>().Enter(this.gameObject);
                 interactable.GetComponent<InteractableObject>().DoStuff();
 
-                GetComponent<CharacterController>().enabled = false;
+                //GetComponent<CharacterController>().enabled = false;
                 isHidden = true;
             }
         }
@@ -192,26 +205,35 @@ public class PlayerController : MonoBehaviour {
         {
 
             // -- Player Movement -- //
-            Quaternion orient = Camera.main.transform.rotation;
-            Vector3 tPadVector = player.leftController.GetAxis(tPad);
-            Vector3 moveDir = orient * Vector3.forward * tPadVector.y + orient * Vector3.right * tPadVector.x;
-            if (tPadVector != Vector3.zero)
+            if (!isHidden)
             {
-                isWalking = true;
+                Quaternion orient = Camera.main.transform.rotation;
+                Vector3 tPadVector = player.leftController.GetAxis(tPad);
+                moveDir = orient * Vector3.forward * tPadVector.y + orient * Vector3.right * tPadVector.x;
+                Debug.DrawLine(player.transform.position, moveDir + player.transform.position, Color.red);
+                if (tPadVector != Vector3.zero)
+                {
+                    isWalking = true;
+                }
+                else
+                {
+                    isWalking = false;
+                }
+                Vector3 playerPos = player.transform.position;
+                playerPos.x += moveDir.x * movementSpeed * Time.deltaTime;
+                playerPos.z += moveDir.z * movementSpeed * Time.deltaTime;
+                player.transform.position = playerPos;
+                //player.transform.Translate(moveDir * movementSpeed * Time.deltaTime);
+                //rb.AddForce(moveDir * movementSpeed * Time.deltaTime);
+                    
+                
             }
-            else
-            {
-                isWalking = false;
-            }
-            Vector3 playerPos = player.transform.position;
-            playerPos.x += moveDir.x * movementSpeed * Time.deltaTime;
-            playerPos.z += moveDir.z * movementSpeed * Time.deltaTime;
-            player.transform.position = playerPos;
             // -- End Player Movement Section -- //
 
         }
     }
-
+    [SerializeField]
+    Vector3 moveDir;
     void RightHand()
     {
         Player player = Player.instance;
