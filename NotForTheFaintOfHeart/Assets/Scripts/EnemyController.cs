@@ -22,6 +22,21 @@ public class EnemyController : MonoBehaviour {
         aSource.maxDistance = 5;
     }
 
+    void Update()
+    {
+        PlayRandomSound();
+    }
+
+    void PlayRandomSound()
+    {
+        float rand = Random.Range(0, 50000);
+
+        if (rand < 100)
+        {
+            PlaySound(randomNoise[Random.Range(0, randomNoise.Length)]);
+        }
+    }
+
     #region Anim.Events
 
     public void Gotcha()

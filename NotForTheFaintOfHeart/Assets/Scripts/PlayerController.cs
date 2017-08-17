@@ -12,13 +12,14 @@ public class PlayerController : MonoBehaviour {
     public AudioSource heartBeat, heartBeatFast;
     public GameObject interactable, entity, navTarg;
     public GameObject cam;
+    public AudioSource aSource;
     public bool isRestart, canPlay;
     public bool isWalking;
     public Rigidbody rb;
 
     [HideInInspector]
     public float currentTargSpeed;
-    public AnimationCurve SlopeCurveModifier = new AnimationCurve(new Keyframe(-90.0f, 1.0f), new Keyframe(0.0f, 1.0f), new Keyframe(90.0f, 0.0f));
+    AnimationCurve SlopeCurveModifier = new AnimationCurve(new Keyframe(-90.0f, 1.0f), new Keyframe(0.0f, 1.0f), new Keyframe(90.0f, 0.0f));
 
     [SerializeField]
     private float movementSpeed = 2f;
@@ -58,6 +59,14 @@ public class PlayerController : MonoBehaviour {
             GetComponent<FlashlightControl>().enabled = true;
         }
 
+        if (!isHidden)
+        {
+            entity.SetActive(true);
+            navTarg.SetActive(true);
+            if(rb.isKinematic)
+                rb.isKinematic = false;
+        }
+
         AnyHand();
         LeftHand();
         RightHand();
@@ -86,10 +95,13 @@ public class PlayerController : MonoBehaviour {
                 {
                     isWalking = true;
                     Debug.Log("Walking");
+                    if(!aSource.isPlaying)
+                        aSource.Play();
                 }
                 else
                 {
                     isWalking = false;
+                    aSource.Stop();
                 }
 
                 if ((Mathf.Abs(tPadVector.x) > float.Epsilon || Mathf.Abs(tPadVector.y) > float.Epsilon))
@@ -97,10 +109,23 @@ public class PlayerController : MonoBehaviour {
                     Vector3 desVel = cam.transform.forward * tPadVector.y + cam.transform.right * tPadVector.x;
                     desVel.x = desVel.x * currentTargSpeed;
                     desVel.z = desVel.z * currentTargSpeed;
-                    desVel.y = desVel.y * currentTargSpeed;
+                    desVel.y = 0;//desVel.y * currentTargSpeed;
 
-                    rb.AddForce(desVel * SlopeMultiplier(), ForceMode.Impulse);
-                    
+                    if (desVel.x > 500)
+                        desVel.x = 499;
+                    if (desVel.z > 500)
+                        desVel.z = 499;
+
+                    rb.AddForce(desVel * SlopeMultiplier(), ForceMode.Force);
+
+                    if (rb.velocity.magnitude > 10)
+                    {
+                        rb.velocity = Vector3.ClampMagnitude(rb.velocity, 10);
+                    }
+                    Debug.Log(rb.velocity.magnitude);
+
+                    //aSource.pitch = 1 + rb.velocity.magnitude / 10;
+
                 }
 
                 if (Mathf.Abs(tPadVector.x) < float.Epsilon && Mathf.Abs(tPadVector.y) < float.Epsilon && rb.velocity.magnitude < 1f)
@@ -199,6 +224,10 @@ public class PlayerController : MonoBehaviour {
         return dist;
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
+    }
 
     #region Controller Logic
 
@@ -225,11 +254,13 @@ public class PlayerController : MonoBehaviour {
             {
                 if (isRestart && canPlay)
                 {
-                    SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
+                    //SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
                 }
             }
         }
     }
+
+
 
     void LeftHand()
     {

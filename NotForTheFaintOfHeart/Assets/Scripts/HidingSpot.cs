@@ -36,8 +36,7 @@ public class HidingSpot : InteractableObject
     public void Enter(GameObject target)
     {
         target.transform.position = hidenSpot.position;
-        target.transform.rotation = hidenSpot.rotation;
-        target.GetComponent<Collider>().enabled = false;
+        //target.transform.rotation = hidenSpot.rotation;
         isHiding = true;
         aSource.PlayOneShot(play);
     }
@@ -46,8 +45,7 @@ public class HidingSpot : InteractableObject
     {
         aSource.PlayOneShot(play);
         target.transform.position = outsidePos.position;
-        target.transform.rotation = outsidePos.rotation;
-        target.GetComponent<Collider>().enabled = true;
+        //target.transform.rotation = outsidePos.rotation;
 
         isHiding = false;
     }
