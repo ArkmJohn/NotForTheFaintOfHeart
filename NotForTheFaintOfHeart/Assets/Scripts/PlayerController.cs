@@ -228,7 +228,10 @@ public class PlayerController : MonoBehaviour {
     {
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
-
+    public void LoadCredits()
+    {
+        SceneManager.LoadScene("Credits", LoadSceneMode.Single);
+    }
     #region Controller Logic
 
     void AnyHand()

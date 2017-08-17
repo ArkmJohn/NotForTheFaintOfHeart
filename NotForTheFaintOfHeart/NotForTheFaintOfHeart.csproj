@@ -130,6 +130,7 @@
     <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\DecalUtils.cs" />
     <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\MeshBuilder.cs" />
     <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\PolygonClippingUtils.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRBoundary.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
