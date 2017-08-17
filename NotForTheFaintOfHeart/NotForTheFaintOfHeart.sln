@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotForTheFaintOfHeart.Plugins", "NotForTheFaintOfHeart.Plugins.csproj", "{1FEAC819-3338-9945-268E-AF0D64EDA5DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotForTheFaintOfHeart", "NotForTheFaintOfHeart.csproj", "{E4E58654-5FE1-DDA8-7BB0-0C851B8A1138}"
