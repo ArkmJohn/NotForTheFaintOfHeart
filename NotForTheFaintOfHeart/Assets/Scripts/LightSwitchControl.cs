@@ -13,7 +13,10 @@ public class LightSwitchControl : InteractableObject {
         myLight.TurnLights();
     }
 
-
+    public override void DoStuff(GameObject target)
+    {
+        Debug.LogError("No Need for Target");
+    }
 
 
 }

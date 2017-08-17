@@ -13,4 +13,10 @@ public class FlashlightInteractable : InteractableObject {
         instructions.SetActive(true);
         gameObject.SetActive(false);
     }
+
+    public override void DoStuff(GameObject target)
+    {
+        Debug.LogError("No Need for target");
+    }
+
 }

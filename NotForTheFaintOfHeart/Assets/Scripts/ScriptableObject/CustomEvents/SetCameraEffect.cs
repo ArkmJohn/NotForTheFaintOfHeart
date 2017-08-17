@@ -27,6 +27,9 @@ public class SetCameraEffect : CustomEvent
     {
         GameObject cam = Camera.main.gameObject;
 
+        if (cam == null)
+            return;
+
         var type = shaderApplicationScriptName;
 
         MonoBehaviour effect = (MonoBehaviour)cam.GetComponent(type);

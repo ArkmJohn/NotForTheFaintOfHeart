@@ -7,6 +7,7 @@ public abstract class InteractableObject : MonoBehaviour
     public GameObject nearIndicator;
 
     public abstract void DoStuff();
+    public abstract void DoStuff(GameObject target);
 
     public virtual void IsNear()
     {

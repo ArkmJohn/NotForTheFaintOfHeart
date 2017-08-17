@@ -55,7 +55,7 @@ public class LightController : MonoBehaviour
         //    }
         //}
 
-		Debug.Log (shouldFlicker);
+		//Debug.Log (shouldFlicker);
     }
 
     public void Flicker(float flickerTimes)
@@ -74,7 +74,7 @@ public class LightController : MonoBehaviour
     [ContextMenu("Turn Lights")]
     public void TurnLights()
     {
-        Debug.Log("Turn Lights");
+        //Debug.Log("Turn Lights");
 
         foreach (Light a in lights)
         {

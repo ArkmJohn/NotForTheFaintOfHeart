@@ -5,54 +5,70 @@ using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour {
 
+    public AudioSource aSource;
+    public AudioClip gotchaSound, endSound, startScream, chaseSound;
+
+    public AudioClip[] randomNoise;
+    public bool screamDone = false;
+
+    void Awake()
+    {
+        if (aSource == null)
+        {
+            aSource = gameObject.AddComponent<AudioSource>();
+
+        }
+        aSource.spatialBlend = 1;
+        aSource.maxDistance = 5;
+    }
+
+    #region Anim.Events
+
+    public void Gotcha()
+    {
+        if (gotchaSound != null)
+        {
+            PlaySound(gotchaSound, 1);
+        }
+    }
+
     public void EndGame()
     {
         SceneManager.LoadScene("Exit", LoadSceneMode.Single);
     }
 
-    //public GameObject scratchObject;
-    //public AudioClip growl, attackClip;
-    //public float maxTimer = 10;
+    public void StartScream()
+    {
+        if (startScream != null)
+        {
+            PlaySound(startScream, 1);
+            screamDone = true;
+        }
+    }
 
-    //float timer = 10;
+    public void INYou()
+    {
+        if (screamDone)
+        {
+            if (chaseSound != null)
+            {
+                PlaySound(chaseSound, 1);
+            }
+        }
+    }
+    #endregion
 
-    //// Use this for initialization
-    //void Start() {
+    #region Sound Stuff
 
-    //}
+    void PlaySound(AudioClip clip)
+    {
+        aSource.PlayOneShot(clip, Random.Range(0.01f, 1f));
+    }
 
-    //// Update is called once per frame
-    //void Update()
-    //{
-    //    timer -= Time.deltaTime;
-    //    if (timer < 0)
-    //    {
-    //        AudioManager.Instance.PlayOneSound(growl, GetComponent<AudioSource>());
-    //        timer = maxTimer;
-    //    }
-    //}
+    void PlaySound(AudioClip clip, float vol)
+    {
+        aSource.PlayOneShot(clip, vol);
+    }
 
-    //public void LightFlicker()
-    //{
-    //    LightController[] allLights = FindObjectsOfType<LightController>();
-
-    //    foreach (LightController l in allLights)
-    //    {
-    //        l.Flicker(5);
-    //    }
-    //}
-
-    //void OnColliderEnter(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Player")
-    //    {
-    //        EndGame();
-    //    }
-    //}
-
-    //public void EndGame()
-    //{
-    //    // Game Should End Here
-    //    GameManager.Instance.Lose();
-    //}
+    #endregion
 }
